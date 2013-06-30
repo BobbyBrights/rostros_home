@@ -178,6 +178,8 @@
 	/*slide principal*/
 	.slider li  {
    display: none;
+   width:1024px;
+   height:724px;
 }
 .slider li img {
     position: relative;
