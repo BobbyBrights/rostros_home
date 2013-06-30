@@ -67,17 +67,9 @@ $( window ).orientationchange();
    */
 	function mostrar_ocultar(slide_sec, des_img)
 	{
-		var num_eventos=document.getElementById("num_eventos").value;
+		alert("mostrar  ocultar");
+		/*var num_eventos=document.getElementById("num_eventos").value;
 		
-		/*for (i=1;i<=num_eventos.length;i++)
-		{
-			var evento="descripcion_img"+i;
-			if(document.getElementById(evento)!=des_img)
-			{
-				document.getElementById(evento).style.display="none";
-			}
-				
-		}*/
 		//alert("taille:"+capas.length);
 		if(document.getElementById(des_img).style.display=='')//visible
 		{
@@ -93,7 +85,7 @@ $( window ).orientationchange();
 			document.getElementById(des_img).style.display='';
 			document.getElementById(slide_sec).style.display='none';
 			document.getElementById("descripcion_img1").style.background='rgba(0,0, 0, 0.5)';
-		}
+		}*/
 	}
 
 </script>
@@ -175,9 +167,9 @@ $( window ).orientationchange();
 	<div class="contenido_slide">
  		<div class="slider">
 			<ul>
-                <li>
-                    <div id="cont_img"><img src="img/fotos/1.jpg"/></div>
-                    <div id="slide_sec" >
+                <li onClick="mostrar_ocultar()">
+                    <div id="cont_img" class="cont_img"><img src="img/fotos/1.jpg"/></div>
+                    <div id="slide_sec" class="slide_sec" style="display:none" >
                    <div class="gallery" id="gallery1">
                    		<div class="holder">
 		                   <div class="list">
@@ -198,7 +190,7 @@ $( window ).orientationchange();
                    </div>
                     
                     </div>
-                    <div id="box_sumario">
+                    <div id="box_sumario" class="box_sumario"> 
                     		<div class="titulo_evento">Titulo</div>
                             <div class="sumario_evento">Sumario</div>
                             <div class="edicion_revista">Edicion</div>
@@ -206,7 +198,7 @@ $( window ).orientationchange();
                 </li>
                 <li>
                     <div id="cont_img"><img src="img/fotos/2.jpg"/></div>
-                    <div id="slide_sec" >
+                    <div id="slide_sec"  style="display:none" >
                    <div class="gallery" id="gallery1">
                    		<div class="holder">
 		                   <div class="list">
@@ -235,7 +227,7 @@ $( window ).orientationchange();
                 </li>
                <li>
                     <div id="cont_img"><img src="img/fotos/3.jpg"/></div>
-                    <div id="slide_sec" >
+                    <div id="slide_sec"  style="display:none">
                    <div class="gallery" id="gallery1">
                    		<div class="holder">
 		                   <div class="list">
@@ -264,7 +256,7 @@ $( window ).orientationchange();
                 </li>
                 <li>
                     <div id="cont_img"><img src="img/fotos/4.jpg"/></div>
-                    <div id="slide_sec" >
+                    <div id="slide_sec"  style="display:none" >
                    <div class="gallery" id="gallery1">
                    		<div class="holder">
 		                   <div class="list">
@@ -293,7 +285,7 @@ $( window ).orientationchange();
                 </li>
                 <li>
                     <div id="cont_img"><img src="img/fotos/5.jpg"/></div>
-                    <div id="slide_sec" >
+                    <div id="slide_sec" style="display:none" >
                    <div class="gallery" id="gallery1">
                    		<div class="holder">
 		                   <div class="list">
