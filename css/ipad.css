@@ -134,13 +134,19 @@
 @media (min-width: 1024px) 
 {
 	
+	#contenido_general
+	{
+		width:1024px;
+		height:724px;
+		background:#F00;
+		clear:both;
+	}
 	#content_slide
 	{
 		margin: 0 auto;
 		width:1024px;
 		height:724px;
-		background:#000;
-		margin-top:44px;
+		background:#fff;
 	}
 	 #contenido_slide, #cont_img
 	 {margin: 0 auto;
