@@ -141,7 +141,7 @@
 		background:#F00;
 		clear:both;
 	}
-	#content_slide
+	#content_slide, .slider
 	{
 		margin: 0px auto;
 		padding:0px;
