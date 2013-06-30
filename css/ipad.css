@@ -146,7 +146,8 @@
 		margin: 0 auto;
 		width:1024px;
 		height:724px;
-		background:#fff;
+		background:#09F;
+		margin-top:-22px
 	}
 	 #contenido_slide, #cont_img
 	 {margin: 0 auto;
