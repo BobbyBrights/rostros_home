@@ -96,7 +96,7 @@
    display: none;
    width:768px;
    height:980px;
-   background:#FFF;
+   background:#000;
 }
 .slider li img {
     position: relative;
@@ -138,7 +138,7 @@
 	{
 		width:1024px;
 		height:724px;
-		background:#f00;
+		background:#000;
 		clear:both;
 	}
 	#content_slide
@@ -147,7 +147,7 @@
 		padding:0px;
 		width:1024px;
 		height:724px;
-		background:#666;
+		background:#000;
 	}
 	 #contenido_slide, #cont_img
 	 {margin: 0 auto;
