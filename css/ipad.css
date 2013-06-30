@@ -73,13 +73,13 @@
 		width:768px;
 		height:544px;
 	}
-	#cont_publi, #cont_seccion
+	/*#cont_publi, #cont_seccion
 	{
 		margin: 0 auto;
 		width:768px;
 		height:980px;
 
-	}
+	}*/
 	/*slide principal*/
 	.slider li  {
    display: none;
@@ -113,7 +113,7 @@
 		height:724px;
 		background:#000;
 	}
-	#cont_publi, #cont_seccion
+	/*#cont_publi, #cont_seccion
 	{
 		margin: 0 auto;
 		width:1024px;
@@ -121,7 +121,7 @@
 		display:block;
 		overflow:hidden;
 
-	}
+	}*/
 	/*#cont_seccion img
 	{
 		width:100%;
