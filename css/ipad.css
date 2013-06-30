@@ -138,7 +138,7 @@
 	{
 		width:1024px;
 		height:724px;
-		background:#F00;
+		background:#f00;
 		clear:both;
 	}
 	#content_slide
@@ -147,8 +147,7 @@
 		padding:0px;
 		width:1024px;
 		height:724px;
-		background:#09F;
-		margin-top:44px;
+		background:#666;
 	}
 	 #contenido_slide, #cont_img
 	 {margin: 0 auto;
@@ -156,7 +155,14 @@
 		height:724px;
 		background:#000;
 	}
-	/*#cont_publi, #cont_seccion
+	/*
+	#contenido_slide, #cont_img
+	 {margin: 0 auto;
+		width:1024px;
+		height:724px;
+		background:#000;
+	}
+	#cont_publi, #cont_seccion
 	{
 		margin: 0 auto;
 		width:1024px;
