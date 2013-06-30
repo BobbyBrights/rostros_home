@@ -66,6 +66,7 @@
 		width:768px;
 		height:980px;
 		background:#decada;
+		margin-top:44px;
 	}
 	
 	 #contenido_slide  
@@ -139,6 +140,7 @@
 		width:1024px;
 		height:724px;
 		background:#000;
+		margin-top:44px;
 	}
 	 #contenido_slide, #cont_img
 	 {margin: 0 auto;
