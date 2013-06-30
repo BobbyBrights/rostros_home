@@ -143,11 +143,12 @@
 	}
 	#content_slide
 	{
-		margin: 0 auto;
+		margin: 0px auto;
+		padding:0px;
 		width:1024px;
 		height:724px;
 		background:#09F;
-		margin-top:-22px
+		margin-top:-20px;
 	}
 	 #contenido_slide, #cont_img
 	 {margin: 0 auto;
