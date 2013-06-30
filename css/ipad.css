@@ -141,14 +141,14 @@
 		background:#F00;
 		clear:both;
 	}
-	#content_slide, .slider
+	#content_slide
 	{
 		margin: 0px auto;
 		padding:0px;
 		width:1024px;
 		height:724px;
 		background:#09F;
-		margin-top:0px;
+		margin-top:44px;
 	}
 	 #contenido_slide, #cont_img
 	 {margin: 0 auto;
