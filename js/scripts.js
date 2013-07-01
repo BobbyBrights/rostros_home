@@ -1,7 +1,11 @@
 $(document).ready(function(){
+	
 $('.slider').carousel({
-dots: true, 
+	
+/*dots: false, 
 infinite: true, 
-speed: 200
+speed: 200*/
 });
+
+
 });
