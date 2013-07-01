@@ -43,6 +43,7 @@ $(document).ready(function() {
 			mode: 'shift',
 			offset: 'auto'
 	});
+	//$("div[id^='slide_sec']").css("display", "none");
 		
 
 				
@@ -66,9 +67,47 @@ $(document).ready(function() {
 $( window ).orientationchange();
 
    */
-	function mostrar_ocultar(slide_sec, des_img)
+
+	function mostrar_ocultar(slide_sec, box)
 	{
-		alert("mostrar  ocultar");
+		 if(document.getElementById("box_sumario1").style.display=='')//visible
+				{
+					document.getElementById("slide_sec1").style.display='none';
+					document.getElementById("box_sumario1").style.display='none';
+					
+					alert("ocultas");
+					
+				}
+				else //oculta
+				{
+					alert("muestras");
+					document.getElementById("box_sumario1").style.display='';
+					document.getElementById("slide_sec1").style.display='none';
+				}
+		/* $( window ).on( "orientationchange", function( event ) {
+			 if(event.orientation=="landscape")
+			 {//box_sumario1 slide_sec1
+				 //alert( "This device is in " + event.orientation + " mode!" );
+				 if(document.getElementById("box_sumario1").style.display=='')//visible
+				{
+					//document.getElementById("box_sumario1").style.display='none';
+					//document.getElementById("slide_sec1").style.display='';
+					alert("ocultas");
+					
+				}
+				else //oculta
+				{
+					alert("muestras");
+					//document.getElementById("box_sumario1").style.display='';
+					//document.getElementById("slide_sec1").style.display='none';
+				}
+			}
+		
+		});
+		$( window ).orientationchange();*/
+		
+		
+		//alert("mostrar  ocultar");
 		/*var num_eventos=document.getElementById("num_eventos").value;
 		
 		//alert("taille:"+capas.length);
@@ -169,8 +208,8 @@ $( window ).orientationchange();
         <div class="flexslider">
           <ul class="slides">
             	<li>
-  	    	    	<div id="cont_img" class="cont_img"><img src="img/fotos/1.jpg" /></div>
-                	<div id="slide_sec1" class="slide_sec">
+  	    	    	<div id="cont_img" class="cont_img" onClick="mostrar_ocultar('slide_sec1','box_sumario1')"><img src="img/fotos/1.jpg" /></div>
+                	<div id="slide_sec1" class="slide_sec" style="display:; z-index:9999">
                    		<div class="gallery" id="gallery1">
                    		<div class="holder">
 		                   <div class="list">
@@ -200,7 +239,7 @@ $( window ).orientationchange();
                 <li>
   	    	    	<div id="cont_img" class="cont_img"><img src="img/fotos/2.jpg" /></div>
                 	<div id="slide_sec1" class="slide_sec">
-                   		<div class="gallery" id="gallery1">
+                   		<div class="gallery" id="gallery2">
                    		<div class="holder">
 		                   <div class="list">
                            		<div class="item"><div class="box box1"><img src="img/fotos/1.jpg"/></div></div>
@@ -220,7 +259,7 @@ $( window ).orientationchange();
                    </div>
                     
                     	</div>
-                    <div id="box_sumario1" class="box_sumario"> 
+                    <div id="box_sumario2" class="box_sumario"> 
                     		<div class="titulo_evento">Titulo</div>
                             <div class="sumario_evento" id="su_evt">Sumario</div>
                             <div class="edicion_revista"><a href="javascript:mostrar_ocultar();">Edicion</a></div>
@@ -229,7 +268,7 @@ $( window ).orientationchange();
                 <li>
   	    	    	<div id="cont_img" class="cont_img"><img src="img/fotos/3.jpg" /></div>
                 	<div id="slide_sec1" class="slide_sec">
-                   		<div class="gallery" id="gallery1">
+                   		<div class="gallery" id="gallery3">
                    		<div class="holder">
 		                   <div class="list">
                            		<div class="item"><div class="box box1"><img src="img/fotos/1.jpg"/></div></div>
@@ -249,13 +288,13 @@ $( window ).orientationchange();
                    </div>
                     
                     	</div>
-                    <div id="box_sumario1" class="box_sumario"> 
+                    <div id="box_sumario3" class="box_sumario"> 
                     		<div class="titulo_evento">Titulo</div>
                             <div class="sumario_evento" id="su_evt">Sumario</div>
                             <div class="edicion_revista"><a href="javascript:mostrar_ocultar();">Edicion</a></div>
                     </div>
   	    		</li>
-                <li>
+                <!--<li>
   	    	    	<div id="cont_img" class="cont_img"><img src="img/fotos/4.jpg" /></div>
                 	<div id="slide_sec1" class="slide_sec">
                    		<div class="gallery" id="gallery1">
@@ -283,8 +322,8 @@ $( window ).orientationchange();
                             <div class="sumario_evento" id="su_evt">Sumario</div>
                             <div class="edicion_revista"><a href="javascript:mostrar_ocultar();">Edicion</a></div>
                     </div>
-  	    		</li>
-                <li>
+  	    		</li>-->
+              <!--  <li>
   	    	    	<div id="cont_img" class="cont_img"><img src="img/fotos/5.jpg" /></div>
                 	<div id="slide_sec1" class="slide_sec">
                    		<div class="gallery" id="gallery1">
@@ -312,7 +351,7 @@ $( window ).orientationchange();
                             <div class="sumario_evento" id="su_evt">Sumario</div>
                             <div class="edicion_revista"><a href="javascript:mostrar_ocultar();">Edicion</a></div>
                     </div>
-  	    		</li>
+  	    		</li>-->
   	    		<!--<li>
   	    	    <div id="img_evtn"><img src="img/fotos/1.jpg" /></div>
                 <div id="decripcion" style="width:100%; height:160px; background:#CCC; position:relative; z-index:9999; margin-top:-200px;">des2</div>
