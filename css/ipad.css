@@ -201,6 +201,7 @@
 		 z-index:9999; 
 		 position:relative;
 		 float:left;
+		 display:none;
 	}
 	.box_sumario
 	{
