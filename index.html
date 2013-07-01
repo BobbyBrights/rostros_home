@@ -33,6 +33,7 @@ $(document).ready(function() {
 	//boton ediciones
 	$('#btn_edicion').click(function() {
 		$('#panelSecciones').slideToggle(800);
+		//alert("jljljlj");
 	});
 	
 	$('#rubrica_name').click(function() {
@@ -41,10 +42,17 @@ $(document).ready(function() {
 	
 	//$('#descripcion_img5').css("display", "none");
 	
-		$("div[id^='gallery']").touchSlider({
-					mode: 'shift',
-					offset: 'auto'
-				});
+	$("div[id^='gallery']").touchSlider({
+			mode: 'shift',
+			offset: 'auto'
+	});
+	
+	$('#img_evt1').click(function() {
+		//$('#panelSecciones').slideToggle(800);
+		alert("jljljlj");
+	});
+				
+				
 
 });
 </script>
@@ -167,8 +175,8 @@ $( window ).orientationchange();
 	<div class="contenido_slide">
  		<div class="slider">
 			<ul>
-                <li onClick="mostrar_ocultar()">
-                    <div id="cont_img1" class="cont_img"><img src="img/fotos/1.jpg"/></div>
+                <li >
+                    <div id="cont_img1" class="cont_img" ><a href="javascript:mostrar_ocultar();" id="img_evt1"><img src="img/fotos/1.jpg"  /></a></div>
                     <div id="slide_sec1" class="slide_sec">
                    <div class="gallery" id="gallery1">
                    		<div class="holder">
