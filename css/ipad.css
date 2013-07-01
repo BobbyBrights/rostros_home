@@ -65,7 +65,7 @@
 		margin: 0 auto;
 		width:768px;
 		height:980px;
-		background:#decada;
+		background:#000;
 		/*margin-top:44px;*/
 	}
 	
@@ -73,7 +73,7 @@
 	 {margin: 0 auto;
 		width:768px;
 		height:980px;
-		background:#999;
+		background:#000;
 	}
 	 .cont_img 
 	 {margin: 0 auto;
@@ -90,7 +90,7 @@
    display: none;
    width:768px;
    height:980px;
-   background:#F00;
+   background:#000;
 }
 .slides li img {
     position: relative;
