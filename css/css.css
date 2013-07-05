@@ -99,7 +99,7 @@ body{
 	background:#000;
 }	
 #menu_inicial img, #cont_seccion img
-{margin-top:-128px;}
+{margin-top:-190px;}
 #cont_seccion img
 {}
 
@@ -114,6 +114,7 @@ body{
 	margin-left:-310px;
 	height:350px;
 	margin-top:-290px;
+
 }
 #cab_menu, #cab_menu_int
 {
