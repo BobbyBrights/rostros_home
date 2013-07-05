@@ -152,6 +152,70 @@ margin-left:-128px;
 .full-width-slider .slider #item1 {
 	background:#FFF;	
 }
+
+/*interiores*/
+.descripcion_rostros
+{
+	width:321px;
+	z-index:9999;
+	/*height:100%;*/
+	height:980px;
+	position:absolute;
+}
+/*.descripcion_rostros .r_descripcion
+{
+	width:305px;
+	z-index:9999;
+	height:980px;
+	background-color: rgba(0,0, 0, 0.7);
+	position:relative;
+	float:left;
+}*/
+.descripcion_rostros .r_flecha
+{
+	width:16px;
+	height:980px;
+	text-align:center;
+	vertical-align:middle;
+	position:relative;
+	float:left;
+}
+.descripcion_rostros .r_flecha img
+{vertical-align:central;
+margin-top:482px;}
+
+.foto_rostros
+{
+	/*width:100%;
+	height:100%;*/
+	width:768px;
+	height:980px;
+	position:absolute;
+	overflow:hidden;
+}
+/*scroll descripcion*/
+/*slide interior*/
+.r_descripcion {
+		width:305px;
+	z-index:9999;
+	height:980px;
+	background-color: rgba(0,0, 0, 0.7);
+	position:relative;
+	float:left;
+        /*background:#000;  
+        margin:0 auto; 
+        text-align: center; 
+        position: relative;
+        width: 768;*/
+    }
+    .r_texto { 
+        overflow-x: hidden;
+        overflow-y: scroll;
+		 -webkit-overflow-scrolling: touch;
+        height: 778px;
+		padding-top:5px;
+		padding-left:10px;
+    } 
 }
 
 @media (min-width: 1024px) 
