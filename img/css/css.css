@@ -5,12 +5,7 @@ body{
 	/*width:70%;*/
 	
 	}
-/* iPads (portrait) ----------- */
-/*@media screen and (min-width: 0px) and (max-width: 768px*/
-@media only screen 
-and (max-device-width : 768px) 
-and (min-device-height : 1024px) 
-and (orientation : portrait)) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
 #menu_inicial
 {
 	/*background:#666;*/
@@ -95,28 +90,8 @@ and (orientation : portrait)) {
 	margin-left:126.5px;
 }
 
-
-#panelSecciones{
-	width:120px;
-	height:auto;
-	text-align:center;
-	margin-top:44px;
-	padding:0;
-	overflow-y: auto;
-	overflow-x: hidden;
-	position:absolute;
-	z-index:20;
-	display:none;
-	background-color: rgba(0,0, 0, 0.5);
-	
 }
-
-}
-/*@media screen and (min-width: 769px) and (max-width: 1024px) {*/
-@media only screen 
-and (min-device-width : 769px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait)) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
 #menu_inicial
 {
@@ -199,22 +174,6 @@ and (orientation : portrait)) {
 {
 	margin-left:254.5px;
 }
-
-
-#panelSecciones{
-	width:120px;
-	height:auto;
-	text-align:center;
-	margin-top:44px;
-	padding:0;
-	overflow-y: auto;
-	overflow-x: hidden;
-	position:absolute;
-	z-index:20;
-	display:none;
-	background-color: rgba(0,0, 0, 0.5);
-	
-}
 }
 
 a{
@@ -262,7 +221,20 @@ a{
 
 
 
-
+#panelSecciones{
+	width:120px;
+	height:auto;
+	text-align:center;
+	margin-top:44px;
+	padding:0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	position:absolute;
+	z-index:20;
+	display:none;
+	background-color: rgba(0,0, 0, 0.5);
+	
+}
 
  ul
 {list-style:none;
