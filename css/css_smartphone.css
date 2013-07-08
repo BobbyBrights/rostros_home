@@ -18,8 +18,8 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
 	#page
 	{
-		width:320px;
-		height:480px;;
+		/*width:320px;
+		height:480px;;*/
 	}
 #menu_inicial
 {
@@ -116,7 +116,7 @@
 #cont_seccion img
 {}
 
-//links*/
+//links
 #link_menu
 {
 	z-index:3;
