@@ -294,6 +294,11 @@ if(screen.width=="320")
 	//$("#menu_inicial").append("<img id='' src='img/iphone-ipod/menu.jpg'/>");
 	var img_menu = document.getElementById('img_menu_inicial');
 	img_menu.src = "img/iphone-ipod/menu.jpg";
+	
+	var img_btn_edicion = document.getElementById('img_btn_edicion');
+	img_btn_edicion.src = "img/iconos_app/menu@2x.png";
+	img_btn_edicion.width="44";
+	img_btn_edicion.height="44";
 
 }
 });
@@ -337,7 +342,7 @@ if(screen.width=="320")
 
 <div data-role="page"  id="page"><!--  -->
 	<div data-role="content"  style="width:100%; height:100%;">
-    	<div align="center" id="menu_inicial" style="width:100%; height:100%; position:absolute; overflow:hidden; ">
+    	<div align="center" id="menu_inicial" style="width:100%; height:100%; position:absolute; overflow:; ">
 		 <img src="" id="img_menu_inicial">
         </div>
         	<div id="link_menu">
@@ -355,7 +360,7 @@ if(screen.width=="320")
 
 <!--  pagina 1-->
 <!--menu-->
-<!--<div id="panelSecciones"  class="panelSeccion"> 
+<div id="panelSecciones"  class="panelSeccion"> 
            <ul>
              <li id="rubrica"><a href="#page2" id="rubrica_name"><img src="img/iconos_app/home@2x.png" height="35" width="35" />HOME</a></li>
             <li id="separador"></li>
@@ -381,13 +386,14 @@ if(screen.width=="320")
             <li id="separador"></li>
             <li  id="rubrica"><a href="#page2" id="rubrica_name">Contacto</a></li>
             </ul>
-        </div>-->
+        </div>
         <!--menu-->
-<!--<div data-role="page" id="page1" style="background:#000; margin:0;">
+<div data-role="page" id="page1" style="background:#fff; margin:0;">
 	
 	<div data-theme="a" data-role="header" data-position="fixed"  id="cebecera_prin" style=" margin:0; padding:0;">
      	<div id="cab_menu"> <a href="javascript:;" id="btn_edicion">
-        <img src="img/iconos_app/boton_ediciones.png" width="120" height="44"/>
+        <img src="" id="img_btn_edicion" >
+       <!-- <img src="img/iconos_app/boton_ediciones.png" width="120" height="44"/>-->
          </a></div>
         <div id="logo"> <a href="#page" onClick="$('#panelSecciones').css('margin-top','-300px');">
         	<img src="img/logo.png" width="131" height="42">
@@ -402,16 +408,16 @@ if(screen.width=="320")
     
        
         <div id="content_slide">
-            <div class="contenido_slide">
-                <div class = 'full-width-slider'>
-
+            <div class="contenido_slide">huhuhuhuh
+                <div class = 'full-width-slider'>bbmnmbmn
+<!--
 			<div class = 'slider'>
 				
 				<div class = 'item' id = 'item1'>
-                <div id="cont_img" class="cont_img" onClick="mostrar_ocultar('slide_sec1','box_sumario1')"><img src="img/fotos/1.jpg" /></div>
+                <div id="cont_img" class="cont_img" onClick="mostrar_ocultar('slide_sec1','box_sumario1')"><img src="img/fotos/1.jpg" /></div>-->
                 	
                     
-                	<div id="slide_sec1" class="slide_sec" >
+                	<!--<div id="slide_sec1" class="slide_sec" >
                     <div class="gallery-holder" style="z-index:9999;">
                         	<div class="gallery_slide" id="gallery_sec1" >
                         		<div class="holder">
@@ -431,20 +437,20 @@ if(screen.width=="320")
                             </div>
                         </div>
                     
-                    </div>
+                    </div>-->
                     
                     
                     
-                    <div id="box_sumario1" class="box_sumario"> 
+                   <!-- <div id="box_sumario1" class="box_sumario"> 
                     		<div class="titulo_evento">Titulo1</div>
                             <div class="sumario_evento" id="su_evt">Sumario</div>
                             <div class="edicion_revista"><a href="javascript:mostrar_ocultar();">Edicion</a></div>
-                    </div>
+                    </div>-->
                     
                     
                 </div>
                 
-				<div class = 'item' id = 'item1'>
+				<!--<div class = 'item' id = 'item1'>
                 	
                 	<div id="cont_img" class="cont_img" onClick="mostrar_ocultar('slide_sec1','box_sumario1')"><img src="img/fotos/2.jpg" /></div>
                                         
@@ -595,10 +601,10 @@ if(screen.width=="320")
                  
                     
                 </div>
-			
+			-->
 			</div>
 		
-		</div>
+		<!--</div>-->
 		
             </div>
         </div>
@@ -608,7 +614,7 @@ if(screen.width=="320")
 	</div>
 	
     
-</div>-->
+</div>
 <!-- fin pagina 1 -->
 
 
