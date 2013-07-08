@@ -288,7 +288,16 @@ $(document).ready(function() {
 		
 		});
 			$( window ).orientationchange();
+	alert(screen.height);		
+if(screen.width=="320")
+{	
+	//$("#menu_inicial").append("<img id='' src='img/iphone-ipod/menu.jpg'/>");
+	var img_menu = document.getElementById('img_menu_inicial');
+	img_menu.src = "img/iphone-ipod/menu.jpg";
+
+}
 });
+
 
 
 </script>
@@ -326,11 +335,10 @@ $(document).ready(function() {
 <!-- page -->
 <!--pagina 2 -->
 
-<div data-role="page"  id="" style="width:100%; height:100%;"><!--  -->
+<div data-role="page"  id="page"><!--  -->
 	<div data-role="content"  style="width:100%; height:100%;">
     	<div align="center" id="menu_inicial" style="width:100%; height:100%; position:absolute; overflow:hidden ">
-		<!-- <img src="img/menu.jpg">-->
-        <div id="img_menu_inicial"></div>
+		 <img src="" id="img_menu_inicial">
         </div>
         	<div id="link_menu">
                 <a href="#page1"><div id="events"></div></a>

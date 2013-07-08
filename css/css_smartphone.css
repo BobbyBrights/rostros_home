@@ -16,21 +16,17 @@
 }
 */
 @media screen and (min-width: 320px) and (max-width: 480px) {
-	#page
-	{
-		/*width:320px;
-		height:480px;;*/
-	}
-#menu_inicial
+#page
 {
-	background:#999;
+	width:100%;
+	height:100%;
+	background:#000;
 }
-#img_menu_inicial
+#menu_inicial img
 {
-	/*background:url(../img/iphone-ipod/menu.jpg);
-	width:10px;
-	height:20px;*/
-}	
+	margin-left:-82px;
+}
+	
 
 
 /*//links
