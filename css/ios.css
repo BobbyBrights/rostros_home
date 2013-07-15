@@ -1114,7 +1114,7 @@ margin-top:210px;}
 	width:320px;
 	height:160px;
 	margin-top:220px;
-	background:#C03;
+	background:#039;
 }
 #events
 {
@@ -1239,14 +1239,14 @@ width:276px;
 	{
 		margin: 0 auto;
 		width:320px;
-		height:436px;
+		height:524px;
 		background:#fff;
 	}
 	
 	 #contenido_slide  
 	 {margin: 0 auto;
 		width:320px;
-		height:436px;
+		height:524px;
 		background:#fff;
 	}
 	 .cont_img 
@@ -1255,7 +1255,7 @@ width:276px;
 		height:200px;
 		display:block;
 		overflow:hidden;
-		margin-top:90px;
+		margin-top:156px;
 		background:#decada;		
 	}
 	.cont_img  img
@@ -1269,7 +1269,7 @@ width:276px;
 	.slide_sec
 	{
 		width:320px; 
-		height:146px; 
+		height:212px; 
 		background:url(../img/patrones/slide.png) repeat;
 		 margin-top:0px;
 		 z-index:9999; 
@@ -1280,9 +1280,9 @@ width:276px;
 	.box_sumario
 	{
 		width:100%; 
-		height:90px;
-		background-color: rgba(0,0, 0, 0.7);
-		margin-top:-290px; 
+		height:156px;
+		background-color: rgba(0,0, 0, 0.8);
+		margin-top:-356px; 
 		z-index:2000; 
 		position:relative;
 		
@@ -1323,19 +1323,19 @@ width:276px;
 #secciones 
 	 {margin: 0 auto;
 		width:320px;
-		height:436px;
+		height:524px;
 		overflow:hidden;
 	}
 
-.img_int_secciones_ipod,.slider_seccion img
+.img_int_secciones_iphone,.slider_seccion img
 {
 	width:320px;
-	height:436px;
+	height:524px;
 }
-.img_int_secciones_ipod img
+.img_int_secciones_iphone img
 {
 	width:320px;
-	height:436px;
+	height:524px;
 	margin-top:-44px;
 }
 
@@ -1345,7 +1345,7 @@ width:276px;
 .r_nom_persona
 	{
 		width:320px; 
-		height:146px; 
+		height:212px; 
 		background-color: rgba(0,0, 0, 0.7);
 		 margin-top:0px;
 		 z-index:9999; 
@@ -1356,21 +1356,21 @@ width:276px;
 	.sum_rostros
 	{
 		width:100%; 
-		height:90px;
+		height:156px;
 		background-color: rgba(0,0, 0, 0.7);
-		margin-top:-290px; 
+		margin-top:-356px; 
 		z-index:2000; 
 		position:relative;
 		
 	}
 
-.rostros
+/*.rostros
 {
 	width:768px;
 	height:600px;
 	overflow:hidden;
 	margin-top:0px;
-}
+}*/
 .rostros img
 {
 	width:100%;
@@ -1387,14 +1387,14 @@ width:276px;
 {
 	width:142px;
 	z-index:9999;
-	height:436px;
+	height:524px;
 	position:absolute;
 }
 
 .descripcion_rostros .r_flecha, .descripcion_seccion .s_flecha
 {
 	width:16px;
-	height:436px;
+	height:524px;
 	text-align:center;
 	vertical-align:middle;
 	position:relative;
@@ -1403,14 +1403,14 @@ width:276px;
 
 .descripcion_rostros .r_flecha img, .descripcion_seccion .s_flecha img
 {vertical-align:central;
-margin-top:210px;}
+margin-top:248px;}
 
 
 
 .foto_rostros
 {
 	width:320px;
-	height:436px;
+	height:524px;
 	position:absolute;
 	overflow:hidden;
 }
@@ -1421,17 +1421,17 @@ margin-top:210px;}
 	width:100%;
 	height:auto;
 }
-.img_int_rostros_ipodIpad, .img_int_rostros_iphone
+ .img_int_rostros_iphone
 {
 	width:320px;
-	height:436px;}
+	height:524px;}
 
 /*scroll descripcion*/
 /*slide interior*/
 .r_descripcion {
 		width:126px;
 	z-index:9999;
-	height:436px;
+	height:524px;
 	background-color: rgba(0,0, 0, 0.7);
 	position:relative;
 	float:left;
@@ -1440,7 +1440,7 @@ margin-top:210px;}
         overflow-x: hidden;
         overflow-y: scroll;
 		 -webkit-overflow-scrolling: touch;
-        height: 370px;
+        height: 430px;
 		padding-top:5px;
 		padding-left:10px;
     } 
@@ -1450,14 +1450,14 @@ margin-top:210px;}
 {
 	width:142px;
 	z-index:9999;
-	height:436px;
+	height:524px;
 	position:absolute;
 }
 
 .descripcion_seccion .r_flecha
 {
 	width:16px;
-	height:436px;
+	height:524px;
 	text-align:center;
 	vertical-align:middle;
 	position:relative;
@@ -1465,12 +1465,12 @@ margin-top:210px;}
 }
 .descripcion_seccion .r_flecha img
 {vertical-align:central;
-margin-top:210px;}
+margin-top:248px;}
 
 .foto_seccion
 {
 	width:320px;
-	height:436px;
+	height:524px;
 	position:absolute;
 	overflow:hidden;
 }
@@ -1480,16 +1480,16 @@ margin-top:210px;}
 	width:100%;
 	height:auto;
 }
-.img_int_secciones_ipodIpad, .img_int_secciones_iphone
+ .img_int_secciones_iphone
 {
 	width:320px;
-	height:436px;}
+	height:524px;}
 /*scroll descripcion*/
 /*slide interior*/
 .s_descripcion {
 	width:126px;
 	z-index:9999;
-	height:436px;
+	height:524px;
 	background-color:#fff;
 	position:relative;
 	float:left;
@@ -1498,7 +1498,7 @@ margin-top:210px;}
         overflow-x: hidden;
         overflow-y: scroll;
 		 -webkit-overflow-scrolling: touch;
-        height: 200px;
+        height: 285px;
 		padding-top:5px;
 		padding-left:10px;
     } 
@@ -1521,7 +1521,7 @@ margin-top:210px;}
 
 /*Agregados generales*/
 .r_name
-{width:100%; height:54px;}
+{width:100%; height:90px;}
 .r_nombre
 {font-weight:bold; font-size:16px; color:#737373; padding-left:10px;}
 .r_apellido
@@ -1535,7 +1535,7 @@ margin-top:210px;}
 
 /*secciones*/
 .s_name
-{width:100%; height:226px;}
+{width:100%; height:228px;}
 
 .s_titulo
 {font-weight:bold; font-size:20px; color:#c5bb9f; padding-left:10px;}
