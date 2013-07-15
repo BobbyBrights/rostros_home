@@ -716,17 +716,20 @@ margin-top:354px;}
 
 
 
-
 #logo_int
 {
-width:276px;
+width:232px;
 	height:44px;
 	display:inline-block;
-	margin-left:10%;
-	text-align:center;
+	margin-left:88px;
 	vertical-align:central;
 	position:absolute;
-	margin-top:-28px;
+	margin-top:-52px;
+}
+
+#logo_int img
+{
+	margin-left:14px;
 }
 
 
@@ -1155,6 +1158,18 @@ margin-top:210px;}
 	z-index:10000;
 	background:#000;	
 }
+#fecha_int
+{
+	width:44px;
+	height:44px;
+	margin-left:44px;
+	margin-top:9px;
+}
+#fecha_int img
+{
+	width:26px;
+	height:26px;
+}
 
 #logo
 {
@@ -1172,23 +1187,20 @@ margin-top:210px;}
 
 #logo_int
 {
-width:276px;
+width:232px;
 	height:44px;
 	display:inline-block;
-	margin-left:10%;
-	text-align:center;
+	margin-left:88px;
 	vertical-align:central;
 	position:absolute;
-	margin-top:-28px;
+	margin-top:-52px;
 }
-/*
+
 #logo_int img
 {
-	margin-left:126.5px;
+	margin-left:14px;
 }
 
-
-*/
 
 #panelSecciones{
 	width:74px;
