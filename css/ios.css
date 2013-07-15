@@ -716,6 +716,19 @@ margin-top:354px;}
 
 
 
+#fecha_int
+{
+	width:44px;
+	height:44px;
+	margin-left:44px;
+	margin-top:9px;
+}
+#fecha_int img
+{
+	width:26px;
+	height:26px;
+}
+
 #logo_int
 {
 width:232px;
@@ -1117,7 +1130,6 @@ margin-top:210px;}
 	width:320px;
 	height:160px;
 	margin-top:220px;
-	background:#039;
 }
 #events
 {
@@ -1158,18 +1170,7 @@ margin-top:210px;}
 	z-index:10000;
 	background:#000;	
 }
-#fecha_int
-{
-	width:44px;
-	height:44px;
-	margin-left:44px;
-	margin-top:9px;
-}
-#fecha_int img
-{
-	width:26px;
-	height:26px;
-}
+
 
 #logo
 {
@@ -1183,7 +1184,18 @@ margin-top:210px;}
 	padding-top:1xp;
 }
 
-
+#fecha_int
+{
+	width:44px;
+	height:44px;
+	margin-left:44px;
+	margin-top:9px;
+}
+#fecha_int img
+{
+	width:26px;
+	height:26px;
+}
 
 #logo_int
 {
@@ -1518,7 +1530,7 @@ margin-top:248px;}
 	/*flecha mas*/
 #flecha_mas_seccion, #flecha_mas_rostros
 {
-	z-index:9999; position:absolute; margin-left:80%; margin-top:98%;		
+	z-index:9999; position:absolute; margin-left:80%; margin-top:90%;		
 }
 #flecha_mas_seccion img,  #flecha_mas_rostros img
 {
