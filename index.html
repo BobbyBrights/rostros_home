@@ -115,7 +115,7 @@ slide_principal("puebla","");
     
     function slide_principal(plaza, pagina)
     {
-		
+		alert("slide principal");
         $.ajax({//url: "http://192.168.1.115/app_rostros/ROSTROS_SINT/php/slide_principal.php",
                type: "POST",
               url: "http://pruebas.lgmateriales.com/rostros/php/slide_principal.php",
@@ -132,7 +132,8 @@ slide_principal("puebla","");
 			   if(pagina=="")
 			   {}
 			   else
-			   { window.location.href = pagina; }
+			   { alert("mandas");
+			   window.location.href = pagina; }
        
     }
 	
@@ -256,25 +257,25 @@ slide_principal("puebla","");
 <!--menu-->
 <div id="panelSecciones"  class="panelSeccion"> 
            <ul>
-             <li id="rubrica"><a href="javascript:slide_pricipal('puebla','#page2');" id="rubrica_name"><img src="img/iconos_app/home@2x.png" height="26" width="26" />HOME</a></li>
+             <li id="rubrica"><a href="javascript:slide_principal('puebla','#page1');" id="rubrica_name"><img src="img/iconos_app/home@2x.png" height="26" width="26" />HOME</a></li>
             <li id="separador"></li>
-            <li   id="rubrica"><a href="javascript:slide_pricipal('puebla','#page2');" id="rubrica_name">Puebla</a></li>
+            <li   id="rubrica"><a href="javascript:slide_principal('puebla','#page2');" id="rubrica_name">Puebla</a></li>
             <li id="separador"></li>
-            <li   id="rubrica"><a href="javascript:slide_pricipal('jalisco','#page2');" id="rubrica_name">Jalisco</a></li>
+            <li   id="rubrica"><a href="javascript:slide_principal('jalisco','#page2');" id="rubrica_name">Jalisco</a></li>
             <li id="separador"></li>
-            <li  id="rubrica"><a href="javascript:slide_pricipal('veracruz','#page2');" id="rubrica_name">Veracruz</a></li>
+            <li  id="rubrica"><a href="javascript:slide_principal('veracruz','#page2');" id="rubrica_name">Veracruz</a></li>
             <li id="separador"></li>
-            <li  id="rubrica"><a href="javascript:slide_pricipal('chiapas','#page2');" id="rubrica_name">Chiapas</a></li>
+            <li  id="rubrica"><a href="javascript:slide_principal('chiapas','#page2');" id="rubrica_name">Chiapas</a></li>
             <li id="separador"></li>
-            <li  id="rubrica"><a href="javascript:slide_pricipal('hidalgo','#page2');" id="rubrica_name">Hidalgo</a></li>
+            <li  id="rubrica"><a href="javascript:slide_principal('hidalgo','#page2');" id="rubrica_name">Hidalgo</a></li>
             <li id="separador"></li>
-            <li  id="rubrica"><a href="javascript:slide_pricipal('tlaxcala','#page2');" id="rubrica_name">Tlaxcala</a></li>
+            <li  id="rubrica"><a href="javascript:slide_principal('tlaxcala','#page2');" id="rubrica_name">Tlaxcala</a></li>
             <li id="separador"></li>
-            <li  id="rubrica"><a href="javascript:slide_pricipal('yucatan','#page2');" id="rubrica_name">Yucat&aacute;n</a></li>
+            <li  id="rubrica"><a href="javascript:slide_principal('yucatan','#page2');" id="rubrica_name">Yucat&aacute;n</a></li>
             <li id="separador"></li>
-            <li  id="rubrica"><a href="javascript:slide_pricipal('oaxaca','#page2');" id="rubrica_name">Oaxaca</a></li>
+            <li  id="rubrica"><a href="javascript:slide_principal('oaxaca','#page2');" id="rubrica_name">Oaxaca</a></li>
             <li id="separador_2"></li>
-            <li  id="rubrica"><a href="javascript:slide_pricipal('puebla','#page2');" id="rubrica_name">Revista Digital</a></li>
+            <li  id="rubrica"><a href="javascript:slide_principal('puebla','#page2');" id="rubrica_name">Revista Digital</a></li>
             <li id="separador"></li>
             <li  id="rubrica"><a href="http://www.gogle.com" target="new" id="rubrica_name">Realidad Virtual</a></li>
             <li id="separador"></li>

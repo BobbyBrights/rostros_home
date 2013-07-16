@@ -39,7 +39,7 @@ $(document).ready(function() {
 			
 				<div class = "item" id = "item1">
                 
-                    <div id="flecha_mas_rostros" ><img src="img/iconos_app/mas.png" width="3" height="3" id="flecha_mas_rostros_img"></div>
+                    <div id="flecha_mas_rostros" ><img src="img/iconos_app/mas.png" width="26" height="26" id="flecha_mas_rostros_img"></div>
                     <div class="img_int_rostros_ipodIpad"><img src="img/prueba_sec1.jpg" /></div>
                         <div class="img_int_rostros_iphone"><img src="img/iphone/bystyle.jpg" /></div>
                 </div>
@@ -67,7 +67,7 @@ $(document).ready(function() {
         	<div id="r_descripcion" class="r_descripcion">
             	<div id="r_name" class="r_name" >
                 	<span class="r_nombre"> ALEJANDRO</span><br>
-                    <span class="r_apellido" > OCHOA hghkhkhk</span>
+                    <span class="r_apellido" > OCHOA</span>
                 </div>
                 <div class="r_separador"></div>
             	<div class="r_texto">
