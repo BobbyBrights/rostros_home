@@ -116,9 +116,9 @@ slide_principal("puebla","");
     function slide_principal(plaza, pagina)
     {
 		
-        $.ajax({
+        $.ajax({//url: "http://192.168.1.115/app_rostros/ROSTROS_SINT/php/slide_principal.php",
                type: "POST",
-              url: "http://192.168.1.115/app_rostros/ROSTROS_SINT/php/slide_principal.php",
+              url: "http://pruebas.lgmateriales.com/rostros/php/slide_principal.php",
                data: "plaza="+plaza,
 				cache: false,
                success: function(message)
@@ -141,9 +141,9 @@ slide_principal("puebla","");
 	function eventos_especiales(pagina, plaza, id_evento)
 	{
 		
-        $.ajax({
+        $.ajax({//url: "http://192.168.1.115/app_rostros/ROSTROS_SINT/php/evento_especial.php",
                type: "POST",
-			   url: "http://192.168.1.115/app_rostros/ROSTROS_SINT/php/evento_especial.php",
+			   url: "http://pruebas.lgmateriales.com/rostros/php/evento_especial.php",
                data: "plaza="+plaza+"id_evento="+id_evento,
                cache: false,
                success: function(message)
@@ -155,12 +155,12 @@ slide_principal("puebla","");
 	}
 	
 	function fn_secciones(pagina, plaza, id_evento)
-	{
+	{// url: "http://192.168.1.115/app_rostros/ROSTROS_SINT/php/secciones.php",
 		
 		 var plaza="puebla";
         $.ajax({
                type: "POST",
-			   url: "http://192.168.1.115/app_rostros/ROSTROS_SINT/php/secciones.php",
+			   url: "http://pruebas.lgmateriales.com/rostros/php/secciones.php",
                data: "plaza="+plaza+"id_evento="+id_evento,
                cache: false,
                success: function(message)
