@@ -3,7 +3,8 @@
 echo'
 
 
-
+    <link rel="stylesheet" href="css/ios.css">
+    <link rel = "stylesheet" href = "css/default.css" />
 <link rel = "stylesheet" href = "css/default.css" />
 		<link rel = "stylesheet" media = "screen" href = "css/common.css" />
 		
@@ -173,7 +174,7 @@ $(document).ready(function() {
                  // alert("i5");
 			//menu
 		var img_menu = document.getElementById("img_menu_ini");
-		img_menu.src="img/iphone_ipod/menu_ipod.jpg";
+		img_menu.src="img/iphone_ipod/menu_iphone.jpg";
 		
 		
 		var img_btn_edicion = document.getElementById("img_btn_edicion");
