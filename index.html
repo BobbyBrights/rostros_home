@@ -88,15 +88,15 @@ slide_home("no");
  $( window ).on( "orientationchange", function( event ) {
 			 if(event.orientation=="landscape")
 			 {
-				//alert("landscape");
-				$('div[id^="box_sumario"]').show();
-				$('div[id^="slide_sec"]').hide();
+				alert("landscape hu");
+				//$('div[id^="box_sumario"]').show();
+				//$('div[id^="slide_sec"]').show();
 			}
 			else
-			{ //alert("portrait");
+			{ alert("portrait");
 				
-					$('div[id^="box_sumario"]').show();
-				$('div[id^="slide_sec"]').show();	
+					//$('div[id^="box_sumario"]').show();
+				//$('div[id^="slide_sec"]').show();	
 				
 			}
 		
@@ -214,15 +214,17 @@ slide_home("no");
 		else
 		{orientacion = 1;}
 		if(orientacion ==1)
-		{
-			$('div[id^="box_sumario"]').slideToggle(800);
-				$('div[id^="slide_sec"]').slideToggle(800);
+		{alert("land");
+			/*$('div[id^="box_sumario"]').slideToggle(800);
+				$('div[id^="slide_sec"]').slideToggle(800);*/
+				//$('div[id^="box_sumario"]').show();
+					//$('div[id^="slide_sec"]').show();
 		}
 		else
 		{//salert("portrait no  haces nada");
 		
-					$('div[id^="box_sumario"]').show();
-					$('div[id^="slide_sec"]').show();
+					//$('div[id^="box_sumario"]').show();
+					//$('div[id^="slide_sec"]').show();
 			
 		}
 		
@@ -241,7 +243,7 @@ slide_home("no");
                                });
     }
 	
-	function mostrar_carrousel()
+	function mostrar_carrousel(id_evento)
 	{
 		document.getElementById("carusel").style.display="";
 	}
@@ -265,21 +267,7 @@ slide_home("no");
 		</script>
 </head> 
 <body onload="video()"> 
-<!--
-<div id="slide_sec1" class="slide_sec" style="background:#F00;" >
-                   <div class="sumario_evento" id="su_evt">Sumario</div>
-                    
-                    </div>
-                    
-                    
-                    
-                    <div id="box_sumario1" class="box_sumario"> 
-                    		<div class="titulo_evento">Titulo1 Titulo1Titulo1 Titulo1 Titulo1 Titulo1 Titulo1 
-                            Titulo1 Titulo1 Titulo1 Titulo1 Titulo1  
-                            </div>
-                            
-                            <div class="edicion_revista">Edicion</div>
-                    </div>-->
+
 <!--pagina-->
 <!--<div data-role="page" id="page">
 	<div data-role="content" style="width:100%; height:100%;background:#000;">
@@ -343,8 +331,8 @@ slide_home("no");
         <!--menu-->
         
        <!-- carrousel <div id="carusel" style="width:768px; height:980px;  position:absolute; z-index:999999; display:;background-color:#000;opacity:0.6;filter:alpha(opacity=60);">-->
-        <div id="carusel" style="width:768px; height:980px;  position:absolute; z-index:999999; display:none;background: rgba(0, 0, 0, 0.5);">
-        <div style="width:768px; height:406.5px; background: rgba(0, 0, 0, 0.5);" onClick="javascript:ocultar_carrousel();"></div>
+        <div id="carusel" >
+        <div id="carusel_arriba"  onClick="javascript:ocultar_carrousel();"></div>
          <div class="gallery-holder" style="margin:0 auto; top:50%; margin-top:0px">
                         	<div class="gallery_slide" id="gallery_sec1" >
                         		<div class="holder">
@@ -364,7 +352,7 @@ slide_home("no");
                             </div>
                         </div>
                         
-                         <div style="width:768px; height:406.5px;background: rgba(0, 0, 0, 0.5);" onClick="javascript:ocultar_carrousel();"></div>
+                         <div id="carusel_abajo" onClick="javascript:ocultar_carrousel();"></div>
         </div>
        <!-- carrousel--> 
         
