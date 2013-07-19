@@ -87,7 +87,7 @@
 	}
 	.titulo_evento
 { 
-color:#FFF;
+	color:#FFF;
 	width:48.7%;
 	height:150px;
 	display:block;
@@ -95,6 +95,9 @@ color:#FFF;
 	text-transform:uppercase;
 	font-size:28px;
 	padding-left:12px;
+	
+	word-wrap: break-word;
+	padding-top:40px;
 }
 .sumario_evento
 {
@@ -107,6 +110,8 @@ color:#FFF;
 	margin-top:-150px;
 	font-size:22px;
 	padding-left:12px;
+	word-wrap: break-word;
+	padding-top:0px;
 }
 
 .edicion_revista
@@ -425,6 +430,8 @@ margin-top:482px;}
 	text-transform:uppercase;
 	font-size:28px;
 	padding-left:12px;
+	word-wrap: break-word;
+	padding-top:40px;
 }
 .sumario_evento
 {
@@ -434,6 +441,8 @@ margin-top:482px;}
 	font-size:22px;
 	color:#FFF;
 	padding-left:12px;
+	word-wrap: break-word;
+	padding-top:40px;
 }
 
 .edicion_revista
@@ -884,6 +893,8 @@ width:232px;
 	text-transform:uppercase;
 	font-size:12px;
 	padding-left:12px;
+	word-wrap: break-word;
+	padding-top:8px;
 }
 .sumario_evento
 {
@@ -896,6 +907,8 @@ width:232px;
 	margin-top:-70px;
 	font-size:18px;
 	padding-left:12px;
+	word-wrap: break-word;
+	padding-top:0px;
 }
 
 .edicion_revista
@@ -1356,6 +1369,8 @@ width:232px;
 	text-transform:uppercase;
 	font-size:12px;
 	padding-left:12px;
+	word-wrap: break-word;
+	padding-top:8px;
 }
 .sumario_evento
 {
@@ -1368,6 +1383,8 @@ width:232px;
 	margin-top:-70px;
 	font-size:18px;
 	padding-left:12px;
+	word-wrap: break-word;
+	padding-top:8px;
 }
 
 .edicion_revista

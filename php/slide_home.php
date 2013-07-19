@@ -8,6 +8,7 @@
 	$query_evento=mysql_query($reg_evento, $conexion);
 	$contador=1;
 	
+	
 
 	
     
@@ -73,9 +74,7 @@
     </script>
     <!-- fin doc -->
     
-    
-    
-    
+ 
     
     
     <div class = "full-width-slider">
@@ -185,7 +184,7 @@
 				 
 				 
 					<div id="sum_rostros" class="sum_rostros">
-						<div class="titulo_evento">NOMBRE DE LA SECCION</div>
+						<div class="titulo_evento">'.utf8_encode($nombre_evento).'</div>
 					</div>
 				 
 				 </div>
@@ -198,7 +197,7 @@
 			
 			
 			//miniaturas
-			$miniaturas="select * from imagenes_eventos where id_evento='".$id_evento."' ";
+			$miniaturas="select * from imagenes_eventos where id_evento='".$id_evento."' order by id ASC limit 15 ";
 			$query_miniaura=mysql_query($miniaturas, $conexion);
 			
 			
@@ -243,7 +242,7 @@
 			
 			
 			<div id="box_sumario1" class="box_sumario">
-				<div class="titulo_evento">'.utf8_encode($row_res_evento['titulo']).'</div>
+				<div class="titulo_evento" >'.utf8_encode($row_res_evento['titulo']).'</div>
 				<div class="sumario_evento" id="su_evt">'.utf8_encode($row_res_evento['sumario']).'</div>
 				<div class="edicion_revista">'.utf8_encode($plaza).'</div>
 			</div>
@@ -269,180 +268,7 @@
     </div>
 	';
 	
-	
-		/*echo'<div class = "item" id = "item1">
-     			<div id="cont_img" class="cont_img" onClick="mostrar_ocultar();"><img src="img/fotos/8.jpg" class="foto_evnt" /></div>
-     
-     
-				 <div id="slide_sec1" class="slide_sec" >
-				 <div class="gallery-holder" style="z-index:2000;">
-				 <div class="gallery_slide" id="gallery_sec1" >
-				 <div class="holder">
-				 <div class="list">
-				 <div id="Gallery1" class="gallery">
-				 <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-				 <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-				 <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-				 <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-				 <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-				 <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-				 <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-				 <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-				 </div>
-				 </div>
-				 </div>
-				 </div>
-				 </div>
-     
-    	 </div>
-     
-     
-     
-     <div id="box_sumario1" class="box_sumario">
-     <div class="titulo_evento">fhfghfdghfhfdhdfgh</div>
-     <div class="sumario_evento" id="su_evt">Sumario</div>
-     <div class="edicion_revista">Edicion</div>
-     </div>
-     
-     
-     </div>
-     
-     <div class = "item" id = "item1">
-     
-     <div id="cont_img" class="cont_img" ><img src="img/fotos/10.jpg" onClick="mostrar_ocultar();" /></div>
-     
-     <div id="slide_sec1" class="slide_sec" >
-     <div class="gallery-holder" style="z-index:2000;">
-     <div class="gallery_slide" id="gallery_sec2" >
-     <div class="holder">
-     <div class="list">
-     <div id="Gallery2" class="gallery">
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     </div>
-     </div>
-     </div>
-     </div>
-     </div>
-     
-     </div>
-     
-     
-     <div id="box_sumario1" class="box_sumario">
-     <div class="titulo_evento">Titulo1</div>
-     <div class="sumario_evento" id="su_evt">Sumario</div>
-     <div class="edicion_revista">Edicion</div>
-     </div>
-     
-     
-     </div>
-     
-     <div class = "item" id = "item1">
-     <div style="width:100%; height:100%; position:absolute; overflow:hidden">
-     <div style="width:100%; height:100%; position:absolute; overflow:scroll;" ><img src="img/01.jpg"/></div>
-     </div>
-     </div>
-     
-     
-     <div class = "item" id = "item1">
-     
-     <div id="cont_img" class="cont_img" ><img src="img/fotos/15.jpg" onClick="mostrar_ocultar();" /></div>
-     
-     
-     <div id="slide_sec1" class="slide_sec" >
-     <div class="gallery-holder" style="z-index:2000;">
-     <div class="gallery_slide" id="gallery_sec3" >
-     <div class="holder">
-     <div class="list">
-     <div id="Gallery3" class="gallery">
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     </div>
-     </div>
-     </div>
-     </div>
-     </div>
-     
-     </div>
-     
-     
-     <div id="box_sumario1" class="box_sumario">
-     <div class="titulo_evento">sin bd</div>
-     <div class="sumario_evento" id="su_evt">Sumario</div>
-     <div class="edicion_revista">Edicion</div>
-     </div>
-     
-     
-     </div>
-     
-     
-     <div class = "item" id = "item1">
-     
-     <div id="cont_img" class="cont_img"><img src="img/fotos/14.jpg" onClick="mostrar_ocultar();"/></div>
-     
-     
-     <div id="slide_sec1" class="slide_sec" >
-     <div class="gallery-holder" style="z-index:2000;">
-     <div class="gallery_slide" id="gallery_sec4" >
-     <div class="holder">
-     <div class="list">
-     <div id="Gallery4" class="gallery">
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     <div class="item_s"><div class="box_s box1"><a href="img/fotos/13.jpg"><img src="img/fotos/13.jpg" width="210" height="159"/></a></div></div>
-     </div>
-     </div>
-     </div>
-     </div>
-     </div>
-     
-     </div>
-     
-     
-     <div id="box_sumario1" class="box_sumario">
-     <div class="titulo_evento">Titulo1</div>
-     <div class="sumario_evento" id="su_evt">Sumario</div>
-     <div class="edicion_revista">Edicion</div>
-     </div>
-     
-     </div>
-     
-   
-     
-     <div class = "item" id = "item1">
-     	<div id="cont_img" class="cont_img" ><a href="#" ><img src="img/fotos/5.jpg" onClick="javascript:eventos_especiales(\'#page3\');" /></a></div>
-     
-		 <div id="r_nom_persona" class="r_nom_persona" >
-		 <DIV>NOMBRE DE LA PERSONA</DIV>
-		 </div>
-     
-     
-     	<div id="sum_rostros" class="sum_rostros">
-     		<div class="titulo_evento">NOMBRE DE LA SECCION</div>
-     	</div>
-     
-     </div>
-    
-    </div>
-    
-    </div>';*/
+
     
   echo' <script>
     if(screen.width=="320" && screen.height=="480")
