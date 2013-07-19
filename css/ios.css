@@ -15,7 +15,7 @@
 {
     #cebecera_prin
 	{
-		/*background:#CF0;*/
+		background:#CF0;
 	}
     #fecha_int
     {
@@ -73,34 +73,34 @@
 	.slide_sec
 	{
 		width:1024px; 
-		height:258px;
+		height:258px; background:url(../img/patrones/slide.png) repeat;
 		 margin-top:0px;
 		 z-index:9999; 
 		 position:relative;
 		 float:left;
-		 background-color: rgba(0,0, 0, 0.7);
 	}
 	.box_sumario
 	{
-		width:100%; 
+		width:768px; 
 		height:210px;
 		background-color: rgba(0,0, 0, 0.7);
 		margin-top:-722px; 
 		z-index:2000; 
 		position:relative;
+		background:#000;
 	}
 	.titulo_evento
 { 
 	color:#FFF;
-	width:768px;
+	width:768;
 	height:150px;
-	display:table-cell;
 	font-family:millerdisplaylight;
 	text-transform:uppercase;
 	font-size:28px;
 	padding-left:12px;
 	word-wrap: break-word;
 	/*padding-top:40px;*/
+	background:#09F;
 }
 .sumario_evento
 {
@@ -115,8 +115,8 @@
 	padding-left:12px;
 	word-wrap: break-word;
 	padding-top:0px;
+	background:#006;
 }
-
 
 .edicion_revista
 {
@@ -395,46 +395,38 @@ margin-top:482px;}
 	 {margin: 0 auto;
 		width:1024px;
 		height:724px;
-		background:#fff;
+		background:#000;
 		overflow:hidden;
 	}
 	.cont_img img
 	{
 		width:100%;
-		height:auto;
+		height:100%;
 	}
 	
 	
 	.slide_sec
 	{
-		width:48%; 
+		width:512px; 
+		height:258px;
 		 margin-top:-292px;
 		 z-index:9999; 
-		 margin-left:50%;
 		 position:absolute;
-		 /*position:relative;
 		 float:left;
-		 */
-	}
-	#cebecera_prin
-	{
-		background:#0C6;
 	}
 	.box_sumario
 	{
 		width:100%; 
 		height:210px;
+		background-color: rgba(0,0, 0, 0.7);
 		margin-top:-245px; 
 		z-index:2000; 
 		position:relative;
-		background:#333;
-		background-color: rgba(0,0, 0, 0.7);
-
 	}
 	/*texto del box*/
 	.titulo_evento
 { 
-	width:48%;
+	width:100%;
 	height:150px;
 	float:left;
 	font-family:millerdisplaylight;
@@ -444,45 +436,20 @@ margin-top:482px;}
 	padding-left:12px;
 	word-wrap: break-word;
 	padding-top:40px;
+	margin-left:50%;
 }
 .sumario_evento
 {
-
-
-	width:100%;
-	height:150px;
+	width:98%;
+	height:190px;
 	float:left;
 	font-size:22px;
 	color:#FFF;
 	padding-left:12px;
 	word-wrap: break-word;
-	padding-top:40px;
+	padding-top:0px;
 	margin-top:47px;
 }
-#carusel
-{
-	width:1024px;
-	 height:768px; 
-	 position:absolute; 
-	 z-index:999999; 
-	 display:;
-	 background: rgba(0, 0, 0, 0.5);
-}
-#carusel_abajo
-{
-	width:1024px; 
-	height:406.5px;
-	background: rgba(0, 0, 0, 0.5);
-}
-#carusel_arriba
-{
-	width:1024px; 
-	height:406.5px; 
-	background: rgba(0, 0, 0, 0.5);
-}
-
-
-
 
 .edicion_revista
 {
@@ -1220,7 +1187,6 @@ margin-top:210px;}
 {
 	width:25%;
 	height:89%;
-
 	float:left;
 	z-index:3;
 }
