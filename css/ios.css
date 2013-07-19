@@ -15,7 +15,7 @@
 {
     #cebecera_prin
 	{
-		background:#CF0;
+		background:#000;
 	}
     #fecha_int
     {
@@ -73,7 +73,7 @@
 	.slide_sec
 	{
 		width:1024px; 
-		height:258px; background:url(../img/patrones/slide.png) repeat;
+		height:258px;
 		 margin-top:0px;
 		 z-index:9999; 
 		 position:relative;
@@ -100,7 +100,7 @@
 	padding-left:12px;
 	word-wrap: break-word;
 	/*padding-top:40px;*/
-	background:#09F;
+	background:#000;
 }
 .sumario_evento
 {
@@ -115,7 +115,7 @@
 	padding-left:12px;
 	word-wrap: break-word;
 	padding-top:0px;
-	background:#006;
+	background:#000;
 }
 
 .edicion_revista
