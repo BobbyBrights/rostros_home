@@ -114,7 +114,7 @@ slide_home("no");
     {
         //url: "http://desarrollosintesis.com/ios/Rostros/php/slide_home.php",
 		//url: "http://pruebas.lgmateriales.com/rostros/php/slide_home.php",
-        alert("entras");
+
         $.ajax({
                type: "POST",
                url: "php/slide_home.php",
@@ -241,8 +241,13 @@ slide_home("no");
                                });
     }
 	
-	function mostrar_acrrousel()
+	function mostrar_carrousel()
 	{
+		document.getElementById("carusel").style.display="";
+	}
+	function ocultar_carrousel()
+	{
+		document.getElementById("carusel").style.display="none";
 		
 	}
 
@@ -260,6 +265,21 @@ slide_home("no");
 		</script>
 </head> 
 <body onload="video()"> 
+<!--
+<div id="slide_sec1" class="slide_sec" style="background:#F00;" >
+                   <div class="sumario_evento" id="su_evt">Sumario</div>
+                    
+                    </div>
+                    
+                    
+                    
+                    <div id="box_sumario1" class="box_sumario"> 
+                    		<div class="titulo_evento">Titulo1 Titulo1Titulo1 Titulo1 Titulo1 Titulo1 Titulo1 
+                            Titulo1 Titulo1 Titulo1 Titulo1 Titulo1  
+                            </div>
+                            
+                            <div class="edicion_revista">Edicion</div>
+                    </div>-->
 <!--pagina-->
 <!--<div data-role="page" id="page">
 	<div data-role="content" style="width:100%; height:100%;background:#000;">
@@ -276,6 +296,9 @@ slide_home("no");
             <div align="center" id="menu_inicial" style="width:100%; height:100%; position:absolute; overflow:hidden ">
              <img src="" id="img_menu_ini">
              </div>
+             <!--<div style="width:100%; height:100%; position:absolute; overflow:hidden">
+                <div style="width:100%; height:100%; position:absolute; overflow:scroll;" ><img src="img/01.jpg"/></div>
+            </div>PUBLICIDAD-->
              <div id="link_menu">
              <a href="#page2" ><div id="events"></div></a>
              <a href="https://itunes.apple.com/us/app/revistadigital/id674245096?l=es&ls=1&mt=8" target="new"><div id="d_magazine"></div></a>
@@ -319,10 +342,10 @@ slide_home("no");
         
         <!--menu-->
         
-       <!-- carrousel-->
-        <div id="carusel" style="width:600px; height:258px; background:#036; position:absolute; z-index:999999">
-        
-         <div class="gallery-holder">
+       <!-- carrousel <div id="carusel" style="width:768px; height:980px;  position:absolute; z-index:999999; display:;background-color:#000;opacity:0.6;filter:alpha(opacity=60);">-->
+        <div id="carusel" style="width:768px; height:980px;  position:absolute; z-index:999999; display:none;background-color:#000;">
+        <div style="width:768px; height:406.5px; background:#666" onClick="javascript:ocultar_carrousel();"></div>
+         <div class="gallery-holder" style="margin:0 auto; top:50%; margin-top:0px">
                         	<div class="gallery_slide" id="gallery_sec1" >
                         		<div class="holder">
                                 	<div class="list">
@@ -340,6 +363,8 @@ slide_home("no");
                                 </div>
                             </div>
                         </div>
+                        
+                         <div style="width:768px; height:406.5px; background:#decada" onClick="javascript:ocultar_carrousel();"></div>
         </div>
        <!-- carrousel--> 
         
@@ -369,20 +394,18 @@ slide_home("no");
 			<div class = 'slider'>
 				
 				<div class = 'item' id = 'item1'>
-                <div id="cont_img" class="cont_img" onClick="mostrar_acrrousel()"><img src="img/fotos/8.jpg" class="foto_evnt" /></div>
+                <div id="cont_img" class="cont_img" onClick="mostrar_carrousel()"><img src="img/fotos/8.jpg" class="foto_evnt" /></div>
                 	
                     
-                	<div id="slide_sec1" class="slide_sec" style="background:#F00;" >
-                   		<div class="sumario_evento" id="su_evt">Sumario</div>
+                	<div id="slide_sec1" class="slide_sec" >
+                    	<div class="sumario_evento" id="su_evt">Sumario</div>
                     
                     </div>
                     
                     
                     
                     <div id="box_sumario1" class="box_sumario"> 
-                    		<div class="titulo_evento">Titulo1 Titulo1Titulo1 Titulo1 Titulo1 Titulo1 Titulo1 
-                            Titulo1 Titulo1 Titulo1 Titulo1 Titulo1  
-                            </div>
+                    		<div class="titulo_evento">Titulo1</div>
                             
                             <div class="edicion_revista">Edicion</div>
                     </div>
