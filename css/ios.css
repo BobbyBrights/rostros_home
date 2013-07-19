@@ -800,8 +800,7 @@ width:232px;
 	position:absolute;
 	z-index:9999;
 	display:none;
-	/*background-color: rgba(0,0, 0, 0.0);*/
-    background:#000;
+	background-color: rgba(0,0, 0, 0.8);
 	
 }
 #rubrica
@@ -1276,9 +1275,8 @@ width:232px;
 	position:absolute;
 	z-index:9999;
 	display:none;
-	/*background-color: rgba(0,0, 0, 0.0);
-	*/
-    background:#000;
+	background-color: rgba(0,0, 0, 0.0);
+	
 }
 #rubrica
 {
