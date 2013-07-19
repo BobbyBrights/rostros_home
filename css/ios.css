@@ -15,7 +15,7 @@
 {
     #cebecera_prin
 	{
-		background:#CF0;
+		/*background:#CF0;*/
 	}
     #fecha_int
     {
@@ -91,7 +91,7 @@
 	.titulo_evento
 { 
 	color:#FFF;
-	width:100%;
+	width:768px;
 	height:150px;
 	display:table-cell;
 	font-family:millerdisplaylight;
