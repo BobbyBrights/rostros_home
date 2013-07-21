@@ -42,7 +42,7 @@
 		preventDefaultSwipeY: false,
 		
 		// PAGER
-		pager: true,
+		pager: false,
 		pagerType: 'full',
 		pagerShortSeparator: ' / ',
 		pagerSelector: null,
@@ -50,7 +50,7 @@
 		pagerCustom: null,
 		
 		// CONTROLS
-		controls: true,
+		controls: false,
 		nextText: 'Next',
 		prevText: 'Prev',
 		nextSelector: null,
@@ -624,16 +624,16 @@
 		 * Appends prev / next controls to the controls element
 		 */
 		var appendControls = function(){
-			slider.controls.next = $('<a class="bx-next" href="">' + slider.settings.nextText + '</a>');
-			slider.controls.prev = $('<a class="bx-prev" href="">' + slider.settings.prevText + '</a>');
+			/*slider.controls.next = $('<a class="bx-next" href="">' + slider.settings.nextText + '</a>');
+			slider.controls.prev = $('<a class="bx-prev" href="">' + slider.settings.prevText + '</a>');*/
 			// bind click actions to the controls
-			slider.controls.next.bind('click', clickNextBind);
-			slider.controls.prev.bind('click', clickPrevBind);
+			/*slider.controls.next.bind('click', clickNextBind);
+			slider.controls.prev.bind('click', clickPrevBind);*/
 			// if nextSlector was supplied, populate it
-			if(slider.settings.nextSelector){
+			/*if(slider.settings.nextSelector){
 				$(slider.settings.nextSelector).append(slider.controls.next);
-			}
-			// if prevSlector was supplied, populate it
+			}*/
+			/*// if prevSlector was supplied, populate it
 			if(slider.settings.prevSelector){
 				$(slider.settings.prevSelector).append(slider.controls.prev);
 			}
@@ -645,7 +645,7 @@
 				slider.controls.directionEl.append(slider.controls.prev).append(slider.controls.next);
 				// slider.viewport.append(slider.controls.directionEl);
 				slider.controls.el.addClass('bx-has-controls-direction').append(slider.controls.directionEl);
-			}
+			}*/
 		}
 		
 		/**
