@@ -25,13 +25,13 @@
 	{
 		height:43px;
 		width:768px;
-		background:#000;
+		background:#0C6;
 		margin:0px;
 		border:0px;
 		padding:0;
 		border-bottom:1px solid #666;
 	}
-	#contenido_slide
+	#contenido_slide, .lista_slider
 	{
 		width:768px;
 		height:980px;
@@ -59,12 +59,12 @@
 	.slide_sec
 	{
 		width:1024px; 
-		height:258px; background:url(../img/patrones/slide.png) repeat;
+		height:258px; background:url(../img/patrones/1.jpg) repeat;
 		margin-top:0px;
 		z-index:9999; 
 		position:relative;
 		float:left;
-		background:#000;
+		/*background:#000;*/
 	}
 	.box_sumario
 	{
@@ -177,7 +177,7 @@
 	}
 	/*texto del box*/
 	.titulo_evento
-{ 
+{ margin-top:-245px;
 	width:48%;
 	height:150px;
 	float:left;
@@ -190,7 +190,7 @@
 	padding-top:40px;
 }
 .sumario_evento
-{
+{margin-top:-245px;
 	width:48%;
 	height:150px;
 	float:left;
