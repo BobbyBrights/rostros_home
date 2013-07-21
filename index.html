@@ -1,82 +1,99 @@
 <!DOCTYPE html>
+<html class="no-js" lang="en">
 <head>
-
+	<meta content="charset=utf-8">
+	<title>FlexSlider 2</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 	
-	<link rel="stylesheet" href="docs/jquery.bxslider.css" type="text/css" />
-    <script src="docs/jquery.min.js"></script><!-- v.1.8.2-->
-    <script src="docs/jquery.bxslider.js"></script>
-   <!-- ios slider/jQuery mobile-->
-    <script src="phonegap.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/jquery.easing-1.3.js"></script>
-    <script src="js/jquery.iosslider.js"></script>
-    <script src="js/jquery.mobile-1.3.1.min.js"></script>
-    <!--<script src="js/jquery-1.9.1.min.js"></script>-->
- 
-    
-	<!--<link rel="stylesheet" href="docs/styles.css" type="text/css" />
-	<link rel="stylesheet" href="docs/github.css" type="text/css" />
--->	
-	<!--[if lt IE 9]>
-	<script src="/js/html5shiv.js"></script>
-	<![endif]-->
+  <!-- Syntax Highlighter -->
+	<!--<link href="css/shCore.css" rel="stylesheet" type="text/css" />
+  <link href="css/shThemeDefault.css" rel="stylesheet" type="text/css" />-->
+  <!-- Demo CSS -->
+	<!--<link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" />-->
+	<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
 	
-	
-	
-	
-	
-<!--	<script src="docs/rainbow.min.js"></script>
-	<script src="docs/scripts.js"></script>-->
-    
-	
-	<script type="text/javascript">
-  $(document).ready(function(){
-    
-$('.bxslider').bxSlider({
-  nextSelector: '#slider-next',
-  prevSelector: '#slider-prev',
-  nextText: 'Onward &rarr;',
-  prevText: '&larr; Go back'
-});
-  });
-</script>
-</head>
-
-<body class="example-item">
-	
-	
-		<div class="inner clearfix">
-			
-			
-			
-			
-			
-
-
-
-
-<div class="slider">
-<ul class="bxslider">
-  <li style="width:500px; height:500px;">extohkhfhkshd</li>
-  <li style="width:450px; height:500px;">
-  <div style="width:450px; height:100px; background:#0099CC;"></div>
-  <div style="width:450px; height:300px; overflow:hidden"><img src="images/2.jpg" style="z-index:1;" /></div>
-  <div style="width:450px; height:100px; background:#F9C; margin-top:-200px; z-index:999999999999999; position:absolute"></div>
+	<!-- Modernizr -->
+  <script src="js/modernizr.js"></script>
   
-  </li>
-  <li style="width:300px; height:500px;"><img src="images/3.jpg" /></li>
-</ul>
+  
+  <script src="phonegap.js"></script>
+    <script src="js2/common.js"></script>
+    <script src="js2/jquery.easing-1.3.js"></script>
+    <script src="js2/jquery.iosslider.js"></script>
+    <script src="js2/jquery.mobile-1.3.1.min.js"></script>
+    <!--<script src="js/jquery-1.9.1.min.js"></script>-->
+  
+</head>
+<body >
 
-
-
-
-
-
-</div>
 	
-		</div>
-	
+  
+  <div id="container" class="cf">
+ 
 
+	<div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+           	    <li>
+  	    	    <div> <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" /></div>
+                <div style="width:200px; height:100px; z-index:99999999; background:rgba(211,113,244,0.5); margin-top:-300px; position:absolute"></div
+                
+  	    		></li>
+  	    		<li>
+  	    	   <div> <img src="images/kitchen_adventurer_lemon.jpg" /></div>
+               <div style="width:200px; height:100px; z-index:99999999; background:rgba(67,211,211,0.5); margin-top:-300px; position:absolute"></div>
+               
+  	    		</li>
+  	    		<li>
+  	    	   <div> <img src="images/kitchen_adventurer_donut.jpg" /></div>
+               <div style="width:200px; height:100px; z-index:99999999; background:rgba(45,3,56,0.5); margin-top:-300px; position:absolute"></div>
+               
+  	    		</li>
+  	    		<li>
+  	    	   	<div> <img src="images/kitchen_adventurer_caramel.jpg" /></div>
+                <div style="width:200px; height:100px; z-index:99999999; background:rgba(255,102,204,0.5); margin-top:-300px; position:absolute"></div>
+                
+  	    		</li>
+          </ul>
+        </div>
+      </section>
+     
+    </div>
+  
+  </div>
+  
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+  
+  <!-- FlexSlider -->
+  <script defer src="jquery.flexslider.js"></script>
+  
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+  <!-- Syntax Highlighter -->
+  <!--<script type="text/javascript" src="js/shCore.js"></script>
+  <script type="text/javascript" src="js/shBrushXml.js"></script>
+  <script type="text/javascript" src="js/shBrushJScript.js"></script>-->
+  
+  <!-- Optional FlexSlider Additions -->
+<!--  <script src="js/jquery.easing.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script defer src="js/demo.js"></script>-->
+  
 </body>
-
 </html>
