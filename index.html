@@ -423,7 +423,26 @@
     <div data-role="content" id="cont_evento_especial" >	
    		
        <div id="foto_rostros" class="foto_rostros">
-        	<div class = 'snap-slider'>
+       <div id="carousel2" class="flexslider">
+          <ul class="slides">
+          <div id="flecha_mas_seccion" ><img src="img/iconos_app/mas.png" width="30" height="30" id="flecha_mas_seccion_img"></div>
+           		  
+                 <li>
+  	    	   		<div class="img_int_rostros_ipodIpad"><img src="img/fotos/1.jpg" /></div>
+                        <div class="img_int_rostros_iphone"><img src="img/iphone/bystyle.jpg" /></div>
+  	    		</li>
+                 <li>
+  	    	   		<div class="img_int_rostros_ipodIpad"><img src="img/fotos/1.jpg" /></div>
+                        <div class="img_int_rostros_iphone"><img src="img/iphone/bystyle.jpg" /></div>
+  	    		</li>
+                <li>
+  	    	   		<div class="img_int_rostros_ipodIpad"><img src="img/fotos/1.jpg" /></div>
+                        <div class="img_int_rostros_iphone"><img src="img/iphone/bystyle.jpg" /></div>
+  	    		</li>
+  	    	
+          </ul>
+        </div>
+        	<!--<div class = 'snap-slider'>
 		
 			<div class = 'slider'>
 			
@@ -451,7 +470,7 @@
                 </div>
 			</div>
 		
-			</div>	
+			</div>-->	
         </div>
         <div id="descripcion_rostros" class="descripcion_rostros">
         	<div id="r_descripcion" class="r_descripcion">
@@ -515,7 +534,29 @@
 	
 	<div data-role="content" id="content_secciones">	
         <div id="foto_seccion" class="foto_seccion">
-        	<div class = 'snap-slider'>
+        <div id="carousel" class="flexslider">
+          <ul class="slides">
+          <div id="flecha_mas_seccion" ><img src="img/iconos_app/mas.png" width="30" height="30" id="flecha_mas_seccion_img"></div>
+           		 <li>
+  	    	   		<div class="img_int_secciones_ipodIpad"><img src="img/prueba_sec.jpg" /></div>
+                	<div class="img_int_secciones_iphone"><img src="img/iphone/bystyle.jpg" /></div>
+  	    		</li>
+  	    		<li>
+  	    	   		<div class="img_int_secciones_ipodIpad"><img src="img/prueba_sec.jpg" /></div>
+                	<div class="img_int_secciones_iphone"><img src="img/iphone/bystyle.jpg" /></div>
+  	    		</li>
+                <li>
+  	    	   		<div class="img_int_secciones_ipodIpad"><img src="img/prueba_sec.jpg" /></div>
+                	<div class="img_int_secciones_iphone"><img src="img/iphone/bystyle.jpg" /></div>
+  	    		</li>
+                <li>
+  	    	   		<div class="img_int_secciones_ipodIpad"><img src="img/prueba_sec.jpg" /></div>
+                	<div class="img_int_secciones_iphone"><img src="img/iphone/bystyle.jpg" /></div>
+  	    		</li>
+  	    	
+          </ul>
+        </div>
+        	<!--<div class = 'snap-slider'>
 		
                 <div class = 'slider slider_seccion'>
                 
@@ -543,7 +584,7 @@
                     </div>
                 </div>
 		
-			</div>	
+			</div>	-->
         </div>
         <div id="descripcion_seccion" class="descripcion_seccion" >
         	<div id="s_descripcion" class="s_descripcion">
@@ -610,26 +651,7 @@
 	</div>
 	<div data-role="content" style="width:100%; height:100%;background:#000; margin:0;" id="cont_publi">	
 				<div id="div_publi">
-                <div id="carousel" class="flexslider">
-          <ul class="slides">
-            <li>
-  	    	    <img src="img/fotos/1.jpg" />
-  	    		</li>
-  	    		<li>
-  	    	    <img src="img/fotos/2.jpg" />
-  	    		</li>
-  	    		<li>
-  	    	    <img src="img/fotos/3.jpg" />
-  	    		</li>
-  	    		<li>
-  	    	   <img src="img/fotos/4.jpg" />
-  	    		</li>
-            <li>
-  	    	    <img src="img/fotos/5.jpg" />
-  	    		</li>
-  	    	
-          </ul>
-        </div>
+                
                 </div>
 	</div>
 </div>
@@ -839,6 +861,15 @@ function cambiar_pagina(pagina)
         asNavFor: '#slider'
       });
 	  
+	  $('#carousel2').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 210,
+        itemMargin: 5,
+        asNavFor: '#slider'
+      });
 	  
 	  
     });
