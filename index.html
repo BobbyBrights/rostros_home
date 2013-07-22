@@ -247,7 +247,7 @@
                 	
                     
                             <div id="slide_sec1" class="slide_sec" >
-                           		 <div id="Gallery" class="gallery">
+                           		 <div id="Gallery" class="gallery" style="z-index:999999999">
                                  	<div id="galeria_contenido">
                                     	<div class="img_galeria"> <a href="img/fotos/1.jpg"><img src="img/fotos/1.jpg" /></a></div>
                                         <div class="img_galeria"><a href="img/fotos/2.jpg"><img src="img/fotos/2.jpg" /></a></div>
@@ -367,7 +367,7 @@
                           	<div id="secciones" >
                                 <div class="img_secciones_ipod"><a href="#page4"><img src="img/ipod/disfruta.jpg" /></a></div>
                                 <div class="img_secciones_iphone"><a href="#page4"><img src="img/iphone/disfruta.jpg" /></a></div>
-                                <div class="img_secciones_ipad"><a href="#"><img src="img/disfruta.jpg" onClick="javascript:fn_secciones('#page4');"/></a></div>
+                                <div class="img_secciones_ipad"><a href="#page4"><img src="img/disfruta.jpg" onClick="javascript:fn_secciones('#page4');"/></a></div>
                             </div>
                           </li>
                           
@@ -610,7 +610,26 @@
 	</div>
 	<div data-role="content" style="width:100%; height:100%;background:#000; margin:0;" id="cont_publi">	
 				<div id="div_publi">
-                
+                <div id="carousel" class="flexslider">
+          <ul class="slides">
+            <li>
+  	    	    <img src="img/fotos/1.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="img/fotos/2.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="img/fotos/3.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	   <img src="img/fotos/4.jpg" />
+  	    		</li>
+            <li>
+  	    	    <img src="img/fotos/5.jpg" />
+  	    		</li>
+  	    	
+          </ul>
+        </div>
                 </div>
 	</div>
 </div>
@@ -802,12 +821,26 @@ function cambiar_pagina(pagina)
       SyntaxHighlighter.all();
     });
     $(window).load(function(){
+		
       $('.flexslider').flexslider({
         animation: "slide",
         start: function(slider){
           $('body').removeClass('loading');
         }
       });
+	  
+	   $('#carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 210,
+        itemMargin: 5,
+        asNavFor: '#slider'
+      });
+	  
+	  
+	  
     });
   </script>
  
