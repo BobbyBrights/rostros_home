@@ -21,10 +21,10 @@
 <!-- slide sec -->
 
 <!-- galeria -->
-<link href="galeria/styles_galeria.css" type="text/css" rel="stylesheet" />
+<!--<link href="galeria/styles_galeria.css" type="text/css" rel="stylesheet" />
 <link href="galeria/photoswipe.css" type="text/css" rel="stylesheet" />
 	<script type="text/javascript" src="galeria/klass.min.js"></script>
-	<script type="text/javascript" src="galeria/code.photoswipe-3.0.4.min.js"></script>
+	<script type="text/javascript" src="galeria/code.photoswipe-3.0.4.min.js"></script>-->
 	<script type="text/javascript">
 
 		(function(window, PhotoSwipe){
@@ -423,6 +423,39 @@
 	</div>
 </div>
 <script>
+slide_principal("puebla","");
+
+
+function slide_principal(plaza, pagina)
+    {
+		alert("slide principal");
+        ////url: "http://192.168.1.115/app_rostros/ROSTROS_SINT/php/slide_principal.php",
+        $.ajax({
+               type: "POST",
+              url: "http://desarrollosintesis.com/ios/Rostros/php/slide_principal.php",
+               data: "plaza="+plaza,
+				cache: false,
+               success: function(message)
+               {
+				 alert("recibes");
+               $('#contenido_slide').html(message);
+			
+               }
+               });
+			  
+			   if(pagina=="")
+			   {}
+			   else
+			   { //alert("mandas");
+			   window.location.href = pagina; }
+       
+    }
+
+
+
+
+
+
 $(document).bind("mobileinit", function(){
 $.mobile.defaultPageTransition = 'none';
 });
