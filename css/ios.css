@@ -15,6 +15,52 @@
 {
 	background:#000000;
 }
+#panelSecciones{
+	position:absolute; 
+	z-index:9999;
+	width:120px;
+	height:auto;
+	text-align:center;
+	margin-top:44px;
+	padding:0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: rgba(0,0, 0, 0.8);
+	display:none;
+	
+}
+#rubrica
+{
+	height:45px;
+	width:100%;
+	color:#878787;
+	font-size:18px;
+    z-index:9999;
+}
+#separador
+{
+	height:1px;
+	background:#878787;
+	width:100%	;
+}
+#separador_2
+{
+	width:100%	;
+	height:13px;
+	background:url(../img/iconos_app/separador.png);
+}
+ul, ul li
+{list-style:none;
+text-decoration:none;
+/*background:#333;*/
+margin:0;
+top:0;
+padding:0;
+}
+a {
+	text-decoration:none;
+	color:#878787;}
+
 
 /*Ipad portrait*/
 @media screen and (min-width: 321px) and (max-width: 768px) 
@@ -23,18 +69,52 @@
 	
 	.cabecera_prin
 	{
-		height:43px;
+		height:45px;
 		width:768px;
-		background:#0C6;
+		background:#000;
 		margin:0px;
 		border:0px;
 		padding:0;
-		border-bottom:1px solid #666;
 	}
+	.contenido_cabecera
+	{
+		width:768px;
+		height:44px;
+		background:#000;
+	}
+	.cab_menu
+	{
+		width:120px;
+		height:44px;
+		background:#000;
+		z-index:10;
+		float:left;
+	}
+	.logo_r
+	{
+		width:648px;
+		height:44px;
+		background:#000;
+		z-index:10;
+		float:left;
+	}
+	.logo_r img
+	{
+		margin-left:190.5px;}
+	
+	.linea_cabecera
+	{
+		width:768px;
+		height:1px;
+		background:#878787;
+		float:left;
+	}
+	
+	
 	#contenido_slide, .lista_slider
 	{
 		width:768px;
-		height:980px;
+		height:899px;
 		background:#000;
 	}
 	
@@ -58,8 +138,8 @@
 	
 	.slide_sec
 	{
-		width:1024px; 
-		height:258px; background:url(../img/patrones/1.jpg) repeat;
+		width:768px; 
+		height:258px; background:url(../img/patrones/slide.png) repeat;
 		margin-top:0px;
 		z-index:9999; 
 		position:relative;
@@ -69,7 +149,7 @@
 	.box_sumario
 	{
 		width:100%; 
-		height:210px;
+		height:209px;
 		background-color: rgba(0,0, 0, 0.7);
 		margin-top:-722px; 
 		z-index:2000; 
@@ -120,14 +200,41 @@
 {
 	.cabecera_prin
 	{
-		height:44px;
-		width:1027px;
+		height:45px;
+		width:1024px;
 		background:#000;
 		margin:0px;
 		border:0px;
 		padding:0;
-		border-bottom:1px solid #666;
 	}
+	.contenido_cabecera
+	{
+		width:1024px;
+		height:44px;
+		background:#000;
+		float:left;
+	}
+	#cab_menu, #cab_menu_int
+	{
+		
+		width:120px; 
+		height:44px;	
+		display:inline-block;
+		padding-top:0px;
+		text-align:center;
+		vertical-align:central;
+		position:absolute;
+		z-index:10000;
+		background:#000;	
+	}
+	.linea_cabecera
+	{
+		width:768px;
+		height:1px;
+		background:#878787;
+		float:left;
+	}
+	
 	#contenido_slide
 	{
 		width:1024px;
@@ -177,7 +284,7 @@
 	}
 	/*texto del box*/
 	.titulo_evento
-{ margin-top:-245px;
+{ 
 	width:48%;
 	height:150px;
 	float:left;
@@ -190,7 +297,7 @@
 	padding-top:40px;
 }
 .sumario_evento
-{margin-top:-245px;
+{
 	width:48%;
 	height:150px;
 	float:left;
