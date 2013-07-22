@@ -402,15 +402,18 @@
 <div data-role="page" id="page3" class="pagina">
 
 	<div data-role="header" data-position="fixed" class="cabecera_prin">
-		<div class="contenido_cabecera">
-        	<div class="cab_menu">
-            	<a href="javascript:;" id="btn_edicion">
+		<div class="contenido_cabecera_int">
+        	<div class="cab_menu_int">
+            	<a href="javascript:;" id="btn_edicion2">
                 <!--<img src="img/iconos_app/boton_ediciones.png" border="0"/>-->
-                <img src="" id="img_btn_edicion">
+                <img src="" id="img_btn_edicion2">
                 </a>
                 <!-- -->
             </div>
-            <div class="logo_r">
+             <div id="fecha_int">
+         <a data-rel="back" data-direction="reverse" ><img src="img/iconos_app/flecha.png"  id="flecha_int_rostros"/></a>
+         </div>
+            <div class="logo_r_int">
             	<a href="#page1"  data-ajax="false" ><img src="img/logo.png" width="131" height="42"></a>
             </div>
         </div>
@@ -492,15 +495,18 @@
 <div data-role="page" id="page4" class="pagina">
 
 	<div data-role="header" data-position="fixed" class="cabecera_prin">
-		<div class="contenido_cabecera">
-        	<div class="cab_menu">
-            	<a href="javascript:;" id="btn_edicion">
+		<div class="contenido_cabecera_int">
+        	<div class="cab_menu_int">
+            	<a href="javascript:;" id="btn_edicion3">
                 <!--<img src="img/iconos_app/boton_ediciones.png" border="0"/>-->
-                <img src="" id="img_btn_edicion">
+                <img src="" id="img_btn_edicion3">
                 </a>
                 <!-- -->
             </div>
-            <div class="logo_r">
+             <div id="fecha_int">
+         <a data-rel="back" data-direction="reverse" ><img src="img/iconos_app/flecha.png"  id="flecha_int_rostros"/></a>
+         </div>
+            <div class="logo_r_int">
             	<a href="#page1"  data-ajax="false" ><img src="img/logo.png" width="131" height="42"></a>
             </div>
         </div>
@@ -582,15 +588,55 @@
 
 
 
-<div data-role="page" id="page5">
-	<div data-role="header">
-		<h1>Página cuatro</h1>
+<div data-role="page" id="page5" class="pagina">
+
+	<div data-role="header" data-position="fixed" class="cabecera_prin">
+		<div class="contenido_cabecera_int">
+        	<div class="cab_menu_int">
+            	<a href="javascript:;" id="btn_edicion4">
+                <!--<img src="img/iconos_app/boton_ediciones.png" border="0"/>-->
+                <img src="" id="img_btn_edicion4">
+                </a>
+                <!-- -->
+            </div>
+             <div id="fecha_int">
+         <a data-rel="back" data-direction="reverse" ><img src="img/iconos_app/flecha.png"  id="flecha_int_rostros"/></a>
+         </div>
+            <div class="logo_r_int">
+            	<a href="#page1"  data-ajax="false" ><img src="img/logo.png" width="131" height="42"></a>
+            </div>
+        </div>
+        <div class="linea_cabecera"></div>
 	</div>
-	<div data-role="content">	
-		Contenido		
+	<div data-role="content" style="width:100%; height:100%;background:#000; margin:0;" id="cont_publi">	
+				<div id="div_publi">
+                
+                </div>
 	</div>
-	<div data-role="footer">
-		<h4>Pie de página</h4>
+</div>
+
+
+<div data-role="page" id="page6" class="pagina">
+
+	<div data-role="header" data-position="fixed" class="cabecera_prin">
+		<div class="contenido_cabecera">
+        	<div class="cab_menu">
+            	<a href="javascript:;" id="btn_edicion5">
+                <!--<img src="img/iconos_app/boton_ediciones.png" border="0"/>-->
+                <img src="" id="img_btn_edicion5">
+                </a>
+                <!-- -->
+            </div>
+            <div class="logo_r">
+            	<a href="#page1"  data-ajax="false" ><img src="img/logo.png" width="131" height="42"></a>
+            </div>
+        </div>
+        <div class="linea_cabecera"></div>
+	</div>
+	<div data-role="content" style="width:100%; height:100%;background:#000; margin:0;" id="cont_publi">	
+				<div id="div_publi">
+                
+                </div>
 	</div>
 </div>
 <script>
@@ -599,7 +645,7 @@ slide_principal("puebla","");
 
 function slide_principal(plaza, pagina)
     {
-		alert("slide principal");
+		//alert("slide principal");
         ////url: "http://192.168.1.115/app_rostros/ROSTROS_SINT/php/slide_principal.php",
         $.ajax({
                type: "POST",
@@ -632,7 +678,7 @@ $.mobile.defaultPageTransition = 'none';
 });
 function cambiar_pagina(pagina)
 {
-	alert("pagina");
+	//alert("pagina");
 	 window.location.href = pagina;
 	}
 	//boton ediciones
@@ -640,6 +686,31 @@ function cambiar_pagina(pagina)
 		$('#panelSecciones').slideToggle(800);
 		//alert("btn seccion");
 	});
+	$('#btn_edicion2').click(function() {
+		$('#panelSecciones').slideToggle(800);
+		//alert("btn seccion");
+	});
+	$('#btn_edicion3').click(function() {
+		$('#panelSecciones').slideToggle(800);
+		//alert("btn seccion");
+	});
+	$('#btn_edicion4').click(function() {
+		$('#panelSecciones').slideToggle(800);
+		//alert("btn seccion");
+	});
+	$('#btn_edicion5').click(function() {
+		$('#panelSecciones').slideToggle(800);
+		//alert("btn seccion");
+	});
+	
+	/*animacion  slide interior*/
+	$("#r_flecha1").click(function(){
+    $("#r_descripcion").animate({width:'toggle'});
+  });
+  
+  $("#s_flecha2").click(function(){
+    $("#s_descripcion").animate({width:'toggle'});
+  });
 		
 	function video()
     {
@@ -688,6 +759,17 @@ function cambiar_pagina(pagina)
 		{
 			var image = $("#img_btn_edicion");
 			image.attr("src", "img/iconos_app/boton_ediciones.png");
+			
+			var image2 = $("#img_btn_edicion2");
+			image2.attr("src", "img/iconos_app/boton_ediciones.png");
+			
+			var image3 = $("#img_btn_edicion3");
+			image3.attr("src", "img/iconos_app/boton_ediciones.png");
+			
+			var image4 = $("#img_btn_edicion4");
+			image4.attr("src", "img/iconos_app/boton_ediciones.png");
+			var image5 = $("#img_btn_edicion5");
+			image5.attr("src", "img/iconos_app/boton_ediciones.png");
 			
 			/*imagen menu*/
 			var img_menu = $("#img_menu_ini");
