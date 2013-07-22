@@ -141,7 +141,9 @@
 	</script>
 
 <script>
-
+function cambiar_pagina()
+{
+	alert("cmbiar painas");}
 
 </script>
 </head> 
@@ -191,7 +193,7 @@
             
             
              <div id="link_menu">
-             <a href="#page2" ><div id="events"></div></a>
+             <a href="#" onClick="cambiar_pagina('#page1')" ><div id="events"></div></a>
              <a href="https://itunes.apple.com/us/app/revistadigital/id674245096?l=es&ls=1&mt=8" target="new"><div id="d_magazine"></div></a>
              <a href=""><div id="reality"></div></a>
              </div>
@@ -211,7 +213,7 @@
                 <!-- -->
             </div>
             <div class="logo_r">
-            	<a href="#page1" ><img src="img/logo.png" width="131" height="42"></a>
+            	<a href="#" onClick="cambiar_pagina('#page1')" ><img src="img/logo.png" width="131" height="42"></a>
             </div>
         </div>
         <div class="linea_cabecera"></div>
@@ -420,7 +422,11 @@
 </div>
 <script>
 
-
+function cambiar_pagina(pagina)
+{
+	alert("pagina");
+	 window.location.href = pagina;
+	}
 	//boton ediciones
 	$('#btn_edicion').click(function() {
 		$('#panelSecciones').slideToggle(800);
