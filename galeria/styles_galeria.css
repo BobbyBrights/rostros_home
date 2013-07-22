@@ -7,11 +7,11 @@ a { color: #878787; }
 /*#MainContent { background: #ffffff; padding-bottom: 30px; width:100%; height:150px;}*/
 
 
-.gallery { list-style: none; padding: 0; margin: 0; }
+.gallery { list-style: none; padding: 0; margin: 0; overflow:hidden; }
 .gallery:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
-.gallery li { float: left; width: 33.33333333%; }
+/*.gallery li { float: left; width: 33.33333333%; }
 .gallery li a { display: block; margin: 5px; color:#878787; }
-.gallery li img { display: block; width: 100%; height: auto; }
+.gallery li img { display: block; width: 100%; height: auto; }*/
 
 
 /* For inline examples only */
