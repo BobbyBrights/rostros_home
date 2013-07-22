@@ -148,6 +148,22 @@ a {
 		
 		/*background:#000;*/
 	}
+	#imagenes_lista
+	{
+		width:768px; 
+		height:258px;
+		overflow:hidden;
+	}
+	#imagenes_lista img
+	{
+		width:150px;
+		height:auto;
+		padding:10px;
+		float:left;
+	}
+	
+	
+	
 	.box_sumario
 	{
 		width:100%; 

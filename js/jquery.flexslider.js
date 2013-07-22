@@ -165,13 +165,13 @@
 
           slider.controlNavScaffold = $('<ol class="'+ namespace + 'control-nav ' + namespace + type + '"></ol>');
 
-          if (slider.pagingCount > 1) {
+          if (slider.pagingCount > 1) {/*
             for (var i = 0; i < slider.pagingCount; i++) {
               item = (vars.controlNav === "thumbnails") ? '<img src="' + slider.slides.eq(i).attr("data-thumb") + '"/>' : '<a>' + j + '</a>';
               slider.controlNavScaffold.append('<li>' + item + '</li>');
               j++;
             }
-          }
+          */}
 
           // CONTROLSCONTAINER:
           (slider.controlsContainer) ? $(slider.controlsContainer).append(slider.controlNavScaffold) : slider.append(slider.controlNavScaffold);
@@ -196,7 +196,7 @@
             });
           }
         },
-        setupManual: function() {
+        setupManual: function() {/*
           slider.controlNav = slider.manualControls;
           methods.controlNav.active();
 
@@ -216,7 +216,7 @@
               event.preventDefault();
             });
           }
-        },
+        */},
         set: function() {
           var selector = (vars.controlNav === "thumbnails") ? 'img' : 'a';
           slider.controlNav = $('.' + namespace + 'control-nav li ' + selector, (slider.controlsContainer) ? slider.controlsContainer : slider);
@@ -836,8 +836,8 @@
     // Primary Controls
     controlNav: false,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
     directionNav: false,             //Boolean: Create navigation for previous/next navigation? (true/false)
-    prevText: "Previous",           //String: Set the text for the "previous" directionNav item
-    nextText: "Next",               //String: Set the text for the "next" directionNav item
+    prevText: "",           //String: Set the text for the "previous" directionNav item
+    nextText: "",               //String: Set the text for the "next" directionNav item
 
     // Secondary Navigation
     keyboard: true,                 //Boolean: Allow slider navigating via keyboard left/right keys
