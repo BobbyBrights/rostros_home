@@ -192,8 +192,8 @@ function cambiar_pagina()
              </div>
             
             
-             <div id="link_menu">
-             <a href="#" onClick="cambiar_pagina('#page1')" ><div id="events"></div></a>
+             <div id="link_menu"><!--  onClick="cambiar_pagina('#page2')"-->
+             <a href="#page2" data-ajax="false" ><div id="events"></div></a>
              <a href="https://itunes.apple.com/us/app/revistadigital/id674245096?l=es&ls=1&mt=8" target="new"><div id="d_magazine"></div></a>
              <a href=""><div id="reality"></div></a>
              </div>
@@ -213,7 +213,7 @@ function cambiar_pagina()
                 <!-- -->
             </div>
             <div class="logo_r">
-            	<a href="#" onClick="cambiar_pagina('#page1')" ><img src="img/logo.png" width="131" height="42"></a>
+            	<a href="#page1"  data-ajax="false" ><img src="img/logo.png" width="131" height="42"></a>
             </div>
         </div>
         <div class="linea_cabecera"></div>
@@ -421,7 +421,9 @@ function cambiar_pagina()
 	</div>
 </div>
 <script>
-
+$(document).bind("mobileinit", function(){
+$.mobile.defaultPageTransition = 'none';
+});
 function cambiar_pagina(pagina)
 {
 	alert("pagina");
