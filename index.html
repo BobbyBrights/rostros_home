@@ -41,7 +41,7 @@
   </script>
   
 <script>
-			if(screen.width=="320" && screen.height=="480")
+	/*		if(screen.width=="320" && screen.height=="480")
 	{
 		//alert("iphne4");//menu
 		var img_menu = document.getElementById("img_menu_ini");
@@ -181,7 +181,10 @@
 		}
 		else 
 		{
-				alert("ipad");	
+				alert("ipadj");	
+				
+				//$("#img_btn_edicion").attr("src", "img/iconos_app/boton_ediciones.png");
+				
 			var img_menu = document.getElementById("img_menu_ini");
 			img_menu.src="img/menu.jpg";
 			
@@ -189,6 +192,7 @@
 			img_btn_edicion.src = "img/iconos_app/boton_ediciones.png";
 			img_btn_edicion.width="120";
 			img_btn_edicion.height="44";
+			
 			
             var img_btn_edicion_int = document.getElementById("img_btn_edicion_int");
                   img_btn_edicion_int.src = "img/iconos_app/boton_ediciones.png";
@@ -240,7 +244,7 @@
 		flecha_in_seccion.height="36"
 			
 		}	
-	}
+	}*/
 		
 		</script>
 
@@ -280,7 +284,7 @@
 		<div class="contenido_cabecera">
         	<div class="cab_menu">
             	<a href="javascript:;" id="btn_edicion">
-                
+                <!--<img src="img/iconos_app/boton_ediciones.png" border="0"/>-->
                 <img src="" id="img_btn_edicion">
                 </a>
                 <!-- -->
@@ -295,12 +299,13 @@
 	<div data-role="content" style="width:100%; height:100%;background:#000; margin:0;">	
 		<div id="contenido_slide" class="contenido_slide">
         	<!--  inicio slide -->
-            <!-- <section class="slider">
+             <section class="slider">
                 <div class="flexslider">
                   <ul class="slides">
                         <li class="lista_slider">
                         	<div id="cont_img" class="cont_img" onClick="">
-                            	<img src="img/fotos/1.jpg" class="foto_evnt" />
+                            <img src="img/fotos/2.jpg" class="foto_evnt" />
+                            	
                             </div>
                 	
                     
@@ -316,9 +321,11 @@
                             
                         
                         </li>
-                        <li class="lista_slider">
+                        
+                        
+                         <li class="lista_slider">
                         	<div id="cont_img" class="cont_img" onClick="">
-                            	<img src="img/fotos/2.jpg" class="foto_evnt" />
+                            	<img src="img/fotos/1.jpg" class="foto_evnt" />
                             </div>
                 	
                     
@@ -354,7 +361,7 @@
                        
                   </ul>
                 </div>
-              </section>-->
+              </section>
             
             
             <!-- fin slide -->
@@ -401,11 +408,31 @@
 </div>
 <script>
 
+
 	//boton ediciones
 	$('#btn_edicion').click(function() {
 		$('#panelSecciones').slideToggle(800);
 		//alert("btn seccion");
 	});
+		
+	if(screen.width=="320" && screen.height=="480")
+	{
+		var image = $("#img_btn_edicion");
+	image.attr("src", "img/iconos_app/menu.png");
+	}
+	else
+	{
+		if(screen.width=="320" && screen.height=="568")
+		{	
+		}
+		else
+		{
+			var image = $("#img_btn_edicion");
+	image.attr("src", "img/iconos_app/boton_ediciones.png");
+		}
+	}
+			
+	
 
 </script>
 
